@@ -9,7 +9,7 @@ export GREP_OPTIONS='--color=auto'
 
 unset MAILCHECK
 
-export PATH=~/bin/:/usr/local/bin/:/Applications/Postgres93.app/Contents/MacOS/bin/:$PATH
+export PATH=~/bin/:~/.rvm/bin/:/usr/local/bin/:$PATH
 
 case $TERM in
     xterm*)
@@ -26,3 +26,6 @@ alias sudo='sudo '
 if [ -f ~/.bashpath ]; then
 	source ~/.bashpath
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+source ~/.rvm/scripts/rvm
