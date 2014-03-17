@@ -11,9 +11,9 @@ export PROMPT_COMMAND='
 	GITTAG=$(git describe --tags 2> /dev/null)
 	if [ "$(git rev-parse --abbrev-ref HEAD 2> /dev/null)" != "" ]; then
 		if git diff-index --quiet HEAD --; then
-		    export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}:${PURPLE}\w ${GREEN}[${YELLOW}${GITBRANCH}${GITTAG}${GREEN}]${GREY}\$ ${WHITE}"
+		    export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}:${PURPLE}\w ${GREEN}|${YELLOW}${GITBRANCH}${GREEN}|${YELLOW}${GITTAG} ${GREY}\$ ${WHITE}"
 		else
-		    export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}:${PURPLE}\w ${GREEN}[${YELLOW}${GITBRANCH}${GITTAG}${RED}*${GREEN}]${GREY}\$ ${WHITE}"
+		    export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}:${PURPLE}\w ${RED}*${GREEN}|${YELLOW}${GITBRANCH}${GREEN}|${YELLOW}${GITTAG} ${GREY}\$ ${WHITE}"
 		fi
 	else
 		export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}:${PURPLE}\w${GREY}\$ ${WHITE}"
