@@ -15,7 +15,7 @@
 	br = branch
 	brdel = !sh -c 'git branch -D $1 && git push origin --delete $1' -
 	sh = stash
-	re = git reset --hard HEAD
+	re = reset --hard HEAD
 	ret = reset --soft HEAD^
 	rea = remote add
 	rer = remote rm

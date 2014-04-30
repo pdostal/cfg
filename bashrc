@@ -11,12 +11,12 @@ export PROMPT_COMMAND='
 	GITTAG=$(git describe --tags 2> /dev/null)
 	if [ "$(git rev-parse --abbrev-ref HEAD 2> /dev/null)" != "" ]; then
 		if git diff-index --quiet HEAD --; then
-		    export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}:${PURPLE}\w ${GREEN}|${YELLOW}${GITBRANCH}${GREEN}|${YELLOW}${GITTAG} ${GREY}\$ ${WHITE}"
+		    export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}: ${PURPLE}\w ${GREEN}|${YELLOW}${GITBRANCH}${GREEN}|${YELLOW}${GITTAG}\n${GREY}\$ ${WHITE}"
 		else
-		    export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}:${PURPLE}\w ${RED}*${GREEN}|${YELLOW}${GITBRANCH}${GREEN}|${YELLOW}${GITTAG} ${GREY}\$ ${WHITE}"
+		    export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}: ${PURPLE}\w ${RED}*${GREEN}|${YELLOW}${GITBRANCH}${GREEN}|${YELLOW}${GITTAG}\n${GREY}\$ ${WHITE}"
 		fi
 	else
-		export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}:${PURPLE}\w${GREY}\$ ${WHITE}"
+		export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}: ${PURPLE}\w\n${GREY}\$ ${WHITE}"
 	fi
 '
 
@@ -27,7 +27,7 @@ export GREP_OPTIONS='--color=auto'
 
 unset MAILCHECK
 
-export PATH=~/bin/:~/.rvm/bin/:/usr/local/bin/:$PATH
+export PATH=~/bin/:$PATH
 
 case $TERM in
     xterm*)
@@ -39,7 +39,6 @@ alias ls='ls -F'
 alias la='ls -laF'
 alias rmr='rm -rf'
 alias rs='rsync -av --delete'
-alias sudo='sudo '
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-PATH=$PATH:$HOME/.rvm/bin
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
