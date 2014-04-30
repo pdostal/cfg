@@ -4,13 +4,13 @@
 [alias]
 	lg = log --stat --summary
 	ll = log --pretty=oneline
-	cm = commit --no-status -am
+	c = commit -a
+	cm = commit -am
 	ca = commit --amend
 	pu = push
 	pl = pull
 	fe = fetch
-	puf = push --force
-	puh = push heroku master
+	ch = checkout
 	st = !git add -A && git status -sbuall
 	br = branch
 	brdel = !sh -c 'git branch -D $1 && git push origin --delete $1' -
