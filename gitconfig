@@ -3,8 +3,8 @@
 	email = git@pdostal.cz
 [alias]
 	lg = log --stat --summary
-	ll = !git log --pretty=oneline
-	cm = !git add -A && git commit --no-status -am
+	ll = log --pretty=oneline
+	cm = commit --no-status -am
 	ca = commit --amend
 	pu = push
 	pl = pull
