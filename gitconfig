@@ -4,8 +4,8 @@
 [alias]
 	lg = log --stat --summary
 	ll = log --pretty=oneline
-	c = commit -a
-	cm = commit -am
+	c = !git add -A && git commit -a
+	cm = !git add -A && git commit -am
 	ca = commit --amend
 	pu = push
 	pl = pull

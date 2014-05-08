@@ -6,6 +6,12 @@ RED="\[\e[0;31m\]"
 GREY="\[\e[0;36m\]"
 WHITE="\[\e[00m\]"
 
+#if [[ $S -eq 0 ]]; then
+#        DOLLAR="${GREEN}\$"
+#else
+#        DOLLAR="${RED}\$"
+#fi
+
 export PROMPT_COMMAND='
 	GITBRANCH=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
 	GITTAG=$(git describe --tags 2> /dev/null)
