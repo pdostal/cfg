@@ -6,6 +6,10 @@ RED="\[\e[0;31m\]"
 GREY="\[\e[0;36m\]"
 WHITE="\[\e[00m\]"
 
+#function parse_git_branch () {
+#  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+#}
+
 #if [[ $S -eq 0 ]]; then
 #        DOLLAR="${GREEN}\$"
 #else
