@@ -1,4 +1,5 @@
 #!/bin/sh
+
 makelink() {
 	echo "$3\t$2";
 	rm -f $2;
@@ -8,6 +9,7 @@ makelink() {
 }
 # bash
 makelink $HOME/cfg/bashrc $HOME/.bashrc 770
+makelink $HOME/cfg/prompt $HOME/.prompt.sh 770
 # vim
 makelink $HOME/cfg/vimrc $HOME/.vimrc 750
 # git
