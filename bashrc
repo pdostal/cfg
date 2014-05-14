@@ -28,4 +28,27 @@ alias rs='rsync -av --delete'
 
 export PATH="/usr/local/heroku/bin:$PATH"
 
-. ~/.bashrun
+export PROMPT_COMMAND='
+
+  if [[ $S -eq 0 ]]; then
+    DOLLAR="${GREY}\$"
+  else
+    DOLLAR="${RED}\$"
+  fi
+
+  if git ls-files &> /dev/null; then
+    GITBRANCH=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+    GITTAG=$(git describe --tags --abbrev=0 2> /dev/null)
+    if git diff-index --quiet HEAD -- 2> /dev/null; then
+      STAR=""
+    else
+      STAR="*"
+    fi
+  else
+    GITBRANCH=""
+    GITTAG=""
+    STAR=""
+  fi
+
+  export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}: ${PURPLE}\w ${RED}${STAR}${YELLOW}${GITBRANCH} ${YELLOW}${GITTAG}\n${GREY}${DOLLAR} ${WHITE}"
+'

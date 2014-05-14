@@ -8,7 +8,6 @@ makelink() {
 }
 # bash
 makelink $HOME/cfg/bashrc $HOME/.bashrc 770
-makelink $HOME/cfg/bashrun $HOME/.bashrun 770
 # vim
 makelink $HOME/cfg/vimrc $HOME/.vimrc 750
 # git
