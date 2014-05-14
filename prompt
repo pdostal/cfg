@@ -7,8 +7,8 @@ else
 fi
 
 if git ls-files &> /dev/null; then
-  GITBRANCH=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
-  GITTAG=$(git describe --tags --abbrev=0 2> /dev/null)
+  GITBRANCH="$(git rev-parse --abbrev-ref HEAD 2> /dev/null)"
+  GITTAG="$(git describe --tags --abbrev=0 2> /dev/null) "
   if git diff-index --quiet HEAD -- 2> /dev/null; then
     STAR=""
   else
@@ -20,4 +20,4 @@ else
   STAR=""
 fi
 
-export PS1="${YELLOW}\u${GREEN}@${RED}\h${BLUE}: ${PURPLE}\w ${RED}${STAR}${YELLOW}${GITBRANCH} ${GREEN}${GITTAG}\n${GREY}${DOLLAR} ${WHITE}"
+export PS1="${PURPLE} \w ${YELLOW}${STAR}${RED}${GITBRANCH}${GREEN}${GITTAG}${GREY}${DOLLAR} ${WHITE}"
