@@ -26,4 +26,6 @@ alias la='ls -laF'
 alias rmr='rm -rf'
 alias rs='rsync -av --delete'
 
-PROMPT_COMMAND="source $HOME/.prompt.sh"
+# PROMPT_COMMAND="source $HOME/.prompt.sh"
+source $HOME/bin/oh-my-git/prompt.sh
+
