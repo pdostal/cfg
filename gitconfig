@@ -1,11 +1,12 @@
 [user]
 	name = pdostal
 	email = git@pdostal.cz
+	signingkey = 70974BA9
 [alias]
 	lg = log --stat --summary
 	ll = log --pretty=oneline
-	c = !git add -A && git commit -a
-	cm = !git add -A && git commit -am
+	c = !git add -A && git commit -S -a
+	cm = !git add -A && git commit -S -am
 	ca = commit --amend
 	pu = push
 	pl = pull
