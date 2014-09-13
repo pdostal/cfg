@@ -25,6 +25,7 @@ alias ls='ls -F'
 alias la='ls -laF'
 alias rmr='rm -rf'
 alias rs='rsync -av --delete'
+alias lastsudo='sudo $(history -p \!\!)'
 
 # PROMPT_COMMAND="source $HOME/.prompt.sh"
 source $HOME/bin/oh-my-git/prompt.sh
