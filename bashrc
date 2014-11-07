@@ -30,3 +30,5 @@ alias lastsudo='sudo $(history -p \!\!)'
 # PROMPT_COMMAND="source $HOME/.prompt.sh"
 source $HOME/bin/oh-my-git/prompt.sh
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
