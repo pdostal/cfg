@@ -1,9 +1,8 @@
-Host *
-	KeepAlive yes
-	Compression yes
-	ControlMaster auto
-	ControlPath /tmp/%r@%h:%p
-	PreferredAuthentications publickey
+KeepAlive yes
+Compression yes
+ControlMaster auto
+ControlPath /tmp/%r@%h:%p
+PreferredAuthentications publickey
 
 Host vps
 	Hostname vps.pdostal.cz
