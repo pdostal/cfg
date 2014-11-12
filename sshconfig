@@ -1,0 +1,46 @@
+Host *
+	ControlMaster auto
+	ControlPath /tmp/%r@%h:%p
+
+Host vps
+	Hostname vps.pdostal.cz
+	User pavel
+	KeepAlive yes
+	Compression yes
+	PreferredAuthentications publickey
+
+Host shark
+	Hostname shark.pdostal.cz
+	User quick
+	KeepAlive yes
+	Compression yes
+
+Host monka
+	Hostname monka.hysteria.cz
+	User quick
+	KeepAlive yes
+	Compression yes
+
+Host dev1area
+	Hostname dev.remoteassistant.me
+	User ubuntu
+	KeepAlive yes
+	Compression yes
+
+Host pro1area
+	Hostname pro.remoteassistant.me
+	User ubuntu
+	KeepAlive yes
+	Compression yes
+
+Host sedrick
+	Hostname sedrick.cz
+	User root
+	KeepAlive yes
+	Compression yes
+
+Host warhorse
+	Hostname kingdomcomerpg.com
+	User warhorse
+	KeepAlive yes
+	Compression yes

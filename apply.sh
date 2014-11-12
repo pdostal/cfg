@@ -16,3 +16,6 @@ makelink $HOME/cfg/vimrc $HOME/.vimrc 750
 makelink $HOME/cfg/gitconfig $HOME/.gitconfig 750
 # htop
 makelink $HOME/cfg/htoprc $HOME/.htoprc 750
+# ssh
+makelink $HOME/cfg/sshconfig $HOME/.ssh/config 700
+
