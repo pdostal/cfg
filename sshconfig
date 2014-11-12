@@ -13,6 +13,8 @@ ServerAliveInterval 10
 
 ForwardAgent yes
 
+IdentityFile ~/.ssh/id_ecdsa
+
 Host vps
 	Hostname vps.pdostal.cz
 	User pavel
@@ -24,19 +26,24 @@ Host shark
 Host monka
 	Hostname monka.hysteria.cz
 	User quick
+	IdentityFile ~/.ssh/id_rsa
 
 Host dev1area
 	Hostname dev.remoteassistant.me
 	User ubuntu
+	IdentityFile ~/.ssh/id_rsa
 
 Host pro1area
 	Hostname pro.remoteassistant.me
 	User ubuntu
+	IdentityFile ~/.ssh/id_rsa
 
 Host sedrick
 	Hostname sedrick.cz
 	User root
+	IdentityFile ~/.ssh/id_rsa
 
 Host warhorse
 	Hostname kingdomcomerpg.com
 	User warhorse
+	IdentityFile ~/.ssh/id_rsa
