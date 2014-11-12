@@ -1,11 +1,17 @@
 KeepAlive yes
 Compression yes
+
 ControlMaster auto
 ControlPath /tmp/%r@%h:%p
 ControlPersist 180
+
 PreferredAuthentications publickey
+
 VisualHostKey yes
+
 ServerAliveInterval 10
+
+ForwardAgent yes
 
 Host vps
 	Hostname vps.pdostal.cz
