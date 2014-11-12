@@ -3,6 +3,7 @@ Compression yes
 ControlMaster auto
 ControlPath /tmp/%r@%h:%p
 PreferredAuthentications publickey
+VisualHostKey yes
 
 Host vps
 	Hostname vps.pdostal.cz
