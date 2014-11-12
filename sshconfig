@@ -4,6 +4,7 @@ ControlMaster auto
 ControlPath /tmp/%r@%h:%p
 PreferredAuthentications publickey
 VisualHostKey yes
+ServerAliveInterval 10
 
 Host vps
 	Hostname vps.pdostal.cz
