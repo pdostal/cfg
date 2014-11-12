@@ -15,6 +15,10 @@ ForwardAgent yes
 
 IdentityFile ~/.ssh/id_ecdsa
 
+Host github.com
+	Hostname github.com
+	User git
+
 Host vps
 	Hostname vps.pdostal.cz
 	User pavel
