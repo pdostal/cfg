@@ -4,7 +4,7 @@ makelink() {
 	echo "$3\t$2";
 	rm -f $2;
 	ln -f $1 $2;
-	chown -f $USER:$USER $2;
+	chown -f $USER $2;
 	chmod -f $3 $2;
 }
 # bash
