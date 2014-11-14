@@ -1,11 +1,3 @@
-GREEN="\[\e[0;32m\]"
-YELLOW="\[\e[0;33m\]"
-BLUE="\[\e[0;34m\]"
-PURPLE="\[\e[0;35m\]"
-RED="\[\e[0;31m\]"
-GREY="\[\e[0;36m\]"
-WHITE="\[\e[00m\]"
-
 export EDITOR="vim"
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
@@ -27,8 +19,3 @@ alias rmr='rm -rf'
 alias rs='rsync -av --delete'
 alias lastsudo='sudo $(history -p \!\!)'
 
-# PROMPT_COMMAND="source $HOME/.prompt.sh"
-source $HOME/bin/oh-my-git/prompt.sh
-
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
