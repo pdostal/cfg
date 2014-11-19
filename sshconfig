@@ -46,3 +46,14 @@ Host warhorse
 	Hostname kingdomcomerpg.com
 	User warhorse
 	IdentityFile ~/.ssh/id_rsa
+
+Host pi.heroesofmemory
+	Hostname home.heroesofmemory.eu
+	User pi
+	Port 23
+
+Host heroesofmemory
+	Hostname home.heroesofmemory.eu
+	User root
+	IdentityFile ~/.ssh/id_dsa
+
