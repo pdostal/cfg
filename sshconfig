@@ -1,7 +1,7 @@
 KeepAlive yes
 Compression yes
 ControlMaster auto
-ControlPath /tmp/%r@%h:%p
+ControlPath /tmp/ssh_%r@%h:%p
 ControlPersist 180
 PreferredAuthentications publickey
 VisualHostKey yes
@@ -56,4 +56,3 @@ Host heroesofmemory
 	Hostname home.heroesofmemory.eu
 	User root
 	IdentityFile ~/.ssh/id_dsa
-
