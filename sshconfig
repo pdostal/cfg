@@ -9,7 +9,7 @@ VisualHostKey yes
 ServerAliveInterval 10
 ForwardAgent yes
 IdentityFile ~/.ssh/id_ecdsa
-LogLevel INFO
+LogLevel VERBOSE
 
 Host bitbucket.org
 	Hostname bitbucket.org
