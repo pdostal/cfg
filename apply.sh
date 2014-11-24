@@ -18,4 +18,6 @@ makelink $HOME/cfg/gitconfig $HOME/.gitconfig 750
 makelink $HOME/cfg/htoprc $HOME/.htoprc 750
 # ssh
 makelink $HOME/cfg/sshconfig $HOME/.ssh/config 700
+# gem
+makelink $HOME/cfg/gemrc $HOME/.gemrc 755
 
