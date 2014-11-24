@@ -1,6 +1,7 @@
 KeepAlive yes
 Compression yes
 ControlMaster auto
+VerifyHostKeyDNS ask
 ControlPath /tmp/ssh_%r@%h:%p
 ControlPersist 180
 PreferredAuthentications publickey
