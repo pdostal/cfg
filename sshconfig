@@ -10,6 +10,11 @@ ForwardAgent yes
 IdentityFile ~/.ssh/id_ecdsa
 LogLevel INFO
 
+Host bitbucket.org
+	Hostname bitbucket.org
+	User git
+	IdentityFile ~/.ssh/id_rsa
+
 Host github.com
 	Hostname github.com
 	User git
