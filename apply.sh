@@ -6,24 +6,25 @@ echo "SUB\tUpdate";
 git submodule update --recursive
 
 makelink() {
-	echo "$3\t$2";
-	rm -f $2;
-	ln -f $1 $2;
-	chown -f $USER $2;
-	chmod -f $3 $2;
+	echo "$3\t$1";
+	rm -f $1;
+	ln -f $2 $1;
+	chown -f $USER $1;
+	chmod -f $3 $1;
 }
+
 # bash
-makelink $PWD/bashrc $HOME/.bashrc 770
-makelink $PWD/profile $HOME/.profile 770
+makelink $HOME/.bashrc $PWD/bashrc 770
+makelink $HOME/.profile $PWD/profile 770
 # vim
-makelink $PWD/vimrc $HOME/.vimrc 750
+makelink $HOME/.vimrc $PWD/vimrc 750
 # git
-makelink $PWD/gitconfig $HOME/.gitconfig 750
-makelink $PWD/gitignore $HOME/.gitignore 750
-makelink $PWD/gitignore_github/Global/OSX.gitignore $HOME/.gitignore_osx 750
+makelink $HOME/.gitconfig $PWD/gitconfig 750
+makelink $HOME/.gitignore $PWD/gitignore 750
+makelink $HOME/.gitignore_osx $PWD/gitignore_github/Global/OSX.gitignore +++
 # htop
-makelink $PWD/htoprc $HOME/.htoprc 750
+makelink $HOME/.htoprc $PWD/htoprc 750
 # ssh
-makelink $PWD/sshconfig $HOME/.ssh/config 700
+makelink $HOME/.ssh/config $PWD/sshconfig 700
 # gem
-makelink $PWD/gemrc $HOME/.gemrc 755
+makelink $HOME/.gemrc $PWD/gemrc 755
