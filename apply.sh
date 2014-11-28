@@ -15,6 +15,7 @@ makelink $PWD/vimrc $HOME/.vimrc 750
 # git
 makelink $PWD/gitconfig $HOME/.gitconfig 750
 makelink $PWD/gitignore $HOME/.gitignore 750
+makelink $PWD/gitignore_github/Global/OSX.gitignore $HOME/.gitignore_osx 750
 # htop
 makelink $PWD/htoprc $HOME/.htoprc 750
 # ssh
