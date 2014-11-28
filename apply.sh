@@ -8,16 +8,16 @@ makelink() {
 	chmod -f $3 $2;
 }
 # bash
-makelink $HOME/cfg/bashrc $HOME/.bashrc 770
-makelink $HOME/cfg/profile $HOME/.profile 770
+makelink $PWD/bashrc $HOME/.bashrc 770
+makelink $PWD/profile $HOME/.profile 770
 # vim
-makelink $HOME/cfg/vimrc $HOME/.vimrc 750
+makelink $PWD/vimrc $HOME/.vimrc 750
 # git
-makelink $HOME/cfg/gitconfig $HOME/.gitconfig 750
+makelink $PWD/gitconfig $HOME/.gitconfig 750
 # htop
-makelink $HOME/cfg/htoprc $HOME/.htoprc 750
+makelink $PWD/htoprc $HOME/.htoprc 750
 # ssh
-makelink $HOME/cfg/sshconfig $HOME/.ssh/config 700
+makelink $PWD/sshconfig $HOME/.ssh/config 700
 # gem
-makelink $HOME/cfg/gemrc $HOME/.gemrc 755
+makelink $PWD/gemrc $HOME/.gemrc 755
 
