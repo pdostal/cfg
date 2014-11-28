@@ -1,5 +1,10 @@
 #!/bin/sh
 
+echo "SUB\tInit";
+git submodule init
+echo "SUB\tUpdate";
+git submodule update --recursive
+
 makelink() {
 	echo "$3\t$2";
 	rm -f $2;
