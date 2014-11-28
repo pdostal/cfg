@@ -8,7 +8,7 @@ git submodule update --recursive
 makelink() {
 	echo "$3\t$1";
 	rm -f $1;
-	ln -f $2 $1;
+	ln -s $2 $1;
 	chown -f $USER $1;
 	chmod -f $3 $1;
 }
@@ -16,6 +16,7 @@ makelink() {
 # bash
 makelink $HOME/.bashrc $PWD/bashrc 770
 makelink $HOME/.profile $PWD/profile 770
+makelink $HOME/.bash_it $PWD/bash-it 770
 # vim
 makelink $HOME/.vimrc $PWD/vimrc 750
 # git

@@ -22,7 +22,7 @@
 	rer = remote rm
 	cl = clone
 [color]
-  ui = auto
+	ui = auto
 [core]
 	excludesfile = ~/.gitignore
 	excludesfile = ~/.gitignore_osx
