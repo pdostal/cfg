@@ -23,5 +23,7 @@
 	cl = clone
 [color]
   ui = auto
+[core]
+	excludesfile = ~/.gitignore
 [push]
 	default = simple

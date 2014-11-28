@@ -14,10 +14,10 @@ makelink $PWD/profile $HOME/.profile 770
 makelink $PWD/vimrc $HOME/.vimrc 750
 # git
 makelink $PWD/gitconfig $HOME/.gitconfig 750
+makelink $PWD/gitignore $HOME/.gitignore 750
 # htop
 makelink $PWD/htoprc $HOME/.htoprc 750
 # ssh
 makelink $PWD/sshconfig $HOME/.ssh/config 700
 # gem
 makelink $PWD/gemrc $HOME/.gemrc 755
-
