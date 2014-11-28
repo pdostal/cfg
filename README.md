@@ -1,4 +1,4 @@
-cfg
-===========
+# Dotfiles
 
-My config files
+My dotfiles
+
