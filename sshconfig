@@ -5,7 +5,7 @@ VerifyHostKeyDNS ask
 ControlPath /tmp/ssh_%r@%h:%p
 ControlPersist 180
 PreferredAuthentications publickey
-VisualHostKey yes
+VisualHostKey no
 ServerAliveInterval 10
 ForwardAgent yes
 IdentityFile ~/.ssh/id_ecdsa
