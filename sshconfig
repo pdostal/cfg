@@ -4,7 +4,7 @@ ControlMaster auto
 VerifyHostKeyDNS ask
 ControlPath /tmp/ssh_%r@%h:%p
 ControlPersist 180
-PreferredAuthentications publickey
+#PreferredAuthentications publickey
 VisualHostKey no
 ServerAliveInterval 10
 ForwardAgent yes
