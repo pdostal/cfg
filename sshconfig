@@ -35,6 +35,13 @@ Host monka
 	User quick
 	IdentityFile ~/.ssh/id_rsa
 
+Host test1area
+	Hostname test.remoteassistant.me
+	User ubuntu
+	IdentityFile ~/.ssh/id_rsa
+Host test.remoteassistant.me
+	IdentityFile ~/.ssh/id_rsa
+
 Host dev1area
 	Hostname dev.remoteassistant.me
 	User ubuntu
