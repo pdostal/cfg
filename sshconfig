@@ -39,10 +39,14 @@ Host dev1area
 	Hostname dev.remoteassistant.me
 	User ubuntu
 	IdentityFile ~/.ssh/id_rsa
+Host dev.remoteassistant.me
+	IdentityFile ~/.ssh/id_rsa
 
 Host pro1area
 	Hostname pro.remoteassistant.me
 	User ubuntu
+	IdentityFile ~/.ssh/id_rsa
+Host pro.remoteassistant.me
 	IdentityFile ~/.ssh/id_rsa
 
 Host sedrick
