@@ -22,6 +22,10 @@ Host github.com
 	Hostname github.com
 	User git
 
+Host pi
+	Hostname 10.99.99.1
+	User root
+
 Host vps
 	Hostname vps.pdostal.cz
 	User pavel
