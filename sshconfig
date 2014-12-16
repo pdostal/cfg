@@ -22,11 +22,12 @@ Host github.com
 	Hostname github.com
 	User git
 
-Host pi
-	Hostname 10.99.99.1
+Host raspberrypi
+	Hostname 10.0.0.5
 	User root
+
 Host carambola
-	Hostname 10.0.0.16
+	Hostname 10.0.0.3
 	User root
 	IdentityFile ~/.ssh/id_dsa
 
