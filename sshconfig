@@ -25,6 +25,10 @@ Host github.com
 Host pi
 	Hostname 10.99.99.1
 	User root
+Host carambola
+	Hostname 10.0.0.16
+	User root
+	IdentityFile ~/.ssh/id_dsa
 
 Host vps
 	Hostname vps.pdostal.cz
