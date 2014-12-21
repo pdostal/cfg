@@ -29,3 +29,4 @@ makelink $HOME/.htoprc $PWD/htoprc 750
 makelink $HOME/.ssh/config $PWD/sshconfig 700
 # gem
 makelink $HOME/.gemrc $PWD/gemrc 755
+
