@@ -27,5 +27,5 @@
 	excludesfile = ~/.gitignore
 	excludesfile = ~/.gitignore_osx
 [push]
-	default = simple
+	default = matching
 
