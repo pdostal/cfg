@@ -15,8 +15,6 @@ makelink() {
 
 # bash
 makelink $HOME/.bashrc $PWD/bashrc 770
-makelink $HOME/.profile $PWD/profile 770
-makelink $HOME/.bash_it $PWD/bash-it 770
 # vim
 makelink $HOME/.vimrc $PWD/vimrc 750
 # git
