@@ -1,9 +1,9 @@
 #!/bin/sh
 
 echo "SUB\tInit";
-git submodule init
+git submodule init 1> /dev/null
 echo "SUB\tUpdate";
-git submodule update --recursive
+git submodule update --recursive 1> /dev/null
 
 makelink() {
 	echo "$3\t$1";
