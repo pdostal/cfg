@@ -22,7 +22,7 @@ Host github.com
 	Hostname github.com
 	User git
 
-Host raspberrypi
+Host pi
 	Hostname 10.0.0.5
 	User root
 
