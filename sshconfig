@@ -24,7 +24,7 @@ Host github.com
 
 Host pi
 	Hostname 10.0.0.5
-	User root
+	User pi
 
 Host carambola
 	Hostname 10.0.0.3
