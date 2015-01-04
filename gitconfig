@@ -7,7 +7,7 @@
 	ll = log --pretty=oneline
 	c = !git add -A && git commit -S -a
 	cm = !git add -A && git commit -S -am
-	ca = commit --amend
+	ca = !git add -A && git commit --amend
 	pu = push
 	pl = pull
 	fe = fetch
