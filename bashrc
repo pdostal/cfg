@@ -12,4 +12,5 @@ alias la='ls -laF'
 alias rmr='rm -rf'
 alias rs='rsync -av --delete'
 alias lastsudo='sudo $(history -p \!\!)'
+alias airport='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport'
 
