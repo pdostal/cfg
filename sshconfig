@@ -13,6 +13,11 @@ LogLevel INFO
 # QUIET, FATAL, ERROR, INFO, VERBOSE
 # DEBUG, DEBUG1, DEBUG2 and DEBUG3
 
+Host local
+	Hostname ::1
+	User pavel
+	IdentityFile ~/.ssh/id_rsa
+
 Host bitbucket.org
 	Hostname bitbucket.org
 	User git
