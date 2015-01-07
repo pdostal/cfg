@@ -3,4 +3,4 @@
 	url = https://github.com/github/gitignore.git
 [submodule "oh-my-git"]
 	path = oh-my-git
-	url = https://github.com/arialdomartini/oh-my-git.git
+	url = https://github.com/pdostal/oh-my-git.git
