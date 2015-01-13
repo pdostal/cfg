@@ -19,15 +19,18 @@ Host carambola
 	IdentityFile ~/.ssh/id_dsa
 
 Host pi
-	Hostname 10.0.0.5
+#	Hostname 10.0.0.5
+	Hostname 192.168.192.4
 	User pi
 
 Host vps
-	Hostname vps.pdostal.cz
+#	Hostname vps.pdostal.cz
+	Hostname 192.168.192.3
 	User pavel
 
 Host shark
-	Hostname shark.pdostal.cz
+#	Hostname shark.pdostal.cz
+	Hostname 192.168.192.1
 	User quick
 
 Host monka
