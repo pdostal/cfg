@@ -14,7 +14,7 @@ LogLevel INFO
 # DEBUG, DEBUG1, DEBUG2 and DEBUG3
 
 Host carambola
-	Hostname 192.168.1.2
+	Hostname 212.4.143.171
 	User root
 	IdentityFile ~/.ssh/id_dsa
 
