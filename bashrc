@@ -22,3 +22,4 @@ fi
 source "$fasd_cache"
 unset fasd_cache
 
+export PS1='\u@\h \w • '
