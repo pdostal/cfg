@@ -14,33 +14,33 @@ LogLevel INFO
 # DEBUG, DEBUG1, DEBUG2 and DEBUG3
 
 Host carambola
-	Hostname 192.168.192.2
+	Hostname 212.4.143.171
 	User root
 	IdentityFile ~/.ssh/id_dsa
 Host Ocarambola
-	Hostname 212.4.143.171
+	Hostname 192.168.192.2
 	User root
 	IdentityFile ~/.ssh/id_dsa
 
 Host pi
-	Hostname 192.168.192.4
+	Hostname 10.0.0.5
 	User pi
 Host Opi
-	Hostname 10.0.0.5
+	Hostname 192.168.192.4
 	User pi
 
 Host vps
-	Hostname 192.168.192.3
+	Hostname vps.pdostal.cz
 	User pavel
 Host Ovps
-	Hostname vps.pdostal.cz
+	Hostname 192.168.192.3
 	User pavel
 
 Host shark
-	Hostname 192.168.192.1
+	Hostname shark.pdostal.cz
 	User quick
 Host Oshark
-	Hostname shark.pdostal.cz
+	Hostname 192.168.192.1
 	User quick
 
 Host monka
