@@ -42,6 +42,12 @@ Host shark
 Host Oshark
 	Hostname 192.168.192.1
 	User quick
+Host lsd
+	Hostname lsd.pdostal.cz
+	User freebsd
+Host Olsd
+	Hostname 192.168.192.5
+	User freebsd
 
 Host monka
 	Hostname monka.hysteria.cz
