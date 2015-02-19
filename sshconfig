@@ -23,7 +23,7 @@ Host Ocarambola
 	IdentityFile ~/.ssh/id_dsa
 
 Host pi
-	Hostname 10.0.0.5
+	Hostname 10.0.0.3
 	User pi
 Host Opi
 	Hostname 192.168.192.4
