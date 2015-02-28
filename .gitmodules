@@ -40,3 +40,6 @@
 [submodule "atom/packages/atom-compile-coffee"]
 	path = atom/packages/atom-compile-coffee
 	url = git@github.com:freshl/atom-compile-coffee.git
+[submodule "atom/packages/atom-codeship-status"]
+	path = atom/packages/codeship-status
+	url = git@github.com:codeship/atom-codeship-status.git
