@@ -1,0 +1,25 @@
+'global':
+  'exception-reporting':
+    'userId': '86d272c9-62c0-cac1-75a9-ac91babfeb7c'
+  'welcome':
+    'showOnStartup': false
+  'autosave':
+    'enabled': true
+  'localization':
+    'CurrentLanguage': 'Default'
+  'script':
+    'escapeConsoleOutput': false
+  'editor':
+    'fontSize': 14
+    'invisibles': {}
+  'core': {}
+'.js.rails.source source.jquery.js':
+  'editor': {}
+'.rails.rjs.ruby.source':
+  'editor': {}
+'.ruby.source.sql':
+  'editor': {}
+'.html.ruby.text':
+  'editor': {}
+'.rails.ruby.source':
+  'editor': {}

@@ -4,3 +4,39 @@
 [submodule "oh-my-git"]
 	path = oh-my-git
 	url = https://github.com/pdostal/oh-my-git.git
+[submodule "atom/packages/color-picker"]
+	path = atom/packages/color-picker
+	url = git@github.com:thomaslindstrom/color-picker.git
+[submodule "atom/packages/gitignore-snippets"]
+	path = atom/packages/gitignore-snippets
+	url = git@github.com:jefkoslowski/gitignore-snippets.git
+[submodule "atom/packages/language-latex"]
+	path = atom/packages/language-latex
+	url = git@github.com:area/language-latex.git
+[submodule "atom/packages/atom-latex"]
+	path = atom/packages/latex
+	url = git@github.com:thomasjo/atom-latex.git
+[submodule "atom/packages/Atom-Localization"]
+	path = atom/packages/localization
+	url = git@github.com:pandarison/Atom-Localization.git
+[submodule "atom/packages/merge-conflicts"]
+	path = atom/packages/merge-conflicts
+	url = git@github.com:smashwilson/merge-conflicts.git
+[submodule "atom/packages/atom-placeholder-text"]
+	path = atom/packages/placeholder-text
+	url = git@github.com:Nonameghost/atom-placeholder-text.git
+[submodule "atom/packages/atom-project-manager"]
+	path = atom/packages/project-manager
+	url = git@github.com:danielbrodin/atom-project-manager.git
+[submodule "atom/packages/project-quick-open"]
+	path = atom/packages/project-quick-open
+	url = git@github.com:chuckhendo/project-quick-open.git
+[submodule "atom/packages/atom-script"]
+	path = atom/packages/script
+	url = git@github.com:rgbkrk/atom-script.git
+[submodule "atom/packages/atom-textstats"]
+	path = atom/packages/textstats
+	url = git@github.com:cjoh/atom-textstats.git
+[submodule "atom/packages/atom-compile-coffee"]
+	path = atom/packages/atom-compile-coffee
+	url = git@github.com:freshl/atom-compile-coffee.git

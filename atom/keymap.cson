@@ -1,0 +1,13 @@
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-csonš
+#
+# https://atom.io/docs/latest/customizing-atom#customizing-key-bindings
+# https://atom.io/docs/latest/advanced/keymaps
+
+'atom-text-editor':
+  'cmd-shift-K': 'editor:delete-line'
+  'alt-down': 'editor:move-line-down'
+  'alt-up': 'editor:move-line-up'
+  'cmd-)': 'editor:indent-selected-rows'
+  'cmd-ú': 'editor:outdent-selected-rows'

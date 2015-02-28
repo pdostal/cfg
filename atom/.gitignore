@@ -1,0 +1,7 @@
+storage
+compile-cache
+dev
+.apm
+.npm
+.npm-debug.log
+.node-gyp

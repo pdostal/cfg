@@ -7,10 +7,10 @@ git submodule update --recursive 1> /dev/null
 
 makelink() {
 	echo "$3\t$1";
-	rm -f $1;
+	rm -rf $1;
 	ln -s $2 $1;
-	chown -f $USER $1;
-	chmod -f $3 $1;
+	chown -Rf $USER $1;
+	chmod -Rf $3 $1;
 }
 
 # bash
@@ -27,4 +27,6 @@ makelink $HOME/.htoprc $PWD/htoprc 750
 makelink $HOME/.ssh/config $PWD/sshconfig 700
 # gem
 makelink $HOME/.gemrc $PWD/gemrc 755
+# Atom
+makelink $HOME/.atom $PWD/atom 755
 
