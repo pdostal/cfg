@@ -11,3 +11,4 @@
   'alt-up': 'editor:move-line-up'
   'cmd-)': 'editor:indent-selected-rows'
   'cmd-ú': 'editor:outdent-selected-rows'
+  'ctrl-alt-space': 'snippets:expand'
