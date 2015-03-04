@@ -16,6 +16,8 @@ alias cs='coffee -o . -c .'
 alias lastsudo='sudo $(history -p \!\!)'
 alias airport='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport'
 
+eval "$(rbenv init -)"
+
 fasd_cache="$HOME/.fasd-init-bash"
 if [ hash fasd 2>/dev/null && "$(command -v fasd)" -nt "$fasd_cache" -o ! -s "$fasd_cache" ]; then
   fasd --init posix-alias bash-hook bash-ccomp bash-ccomp-install >| "$fasd_cache"
