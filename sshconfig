@@ -85,6 +85,10 @@ Host warhorse
 	User warhorse
 	IdentityFile ~/.ssh/id_rsa
 
+Host w-web
+	Hostname 77.93.223.122
+	User david
+
 Host pi.heroesofmemory
 	Hostname home.heroesofmemory.eu
 	User pi
