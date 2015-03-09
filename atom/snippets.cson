@@ -17,6 +17,6 @@
     """
 
 '.source.tex':
-  'it':
-    'prefix': 'it'
+  'ii':
+    'prefix': 'ii'
     'body': '\item $1'
