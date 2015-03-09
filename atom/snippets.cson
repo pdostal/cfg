@@ -3,7 +3,7 @@
     'prefix': 'itemize'
     'body': """
       \begin{itemize}
-        \item
+        \item $1
       \end{itemize}
     """
 
@@ -12,6 +12,11 @@
     'prefix': 'enumerate'
     'body': """
       \begin{enumerate}
-        \item
+        \item $1
       \end{enumerate}
     """
+
+'.source.tex':
+  'it':
+    'prefix': 'it'
+    'body': '\item $1'
