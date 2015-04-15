@@ -66,27 +66,6 @@ Host shell.sh
 	Hostname shell.sh.cvut.cz
 	User pdostal
 
-Host test1area
-	Hostname test.remoteassistant.me
-	User ubuntu
-	IdentityFile ~/.ssh/id_rsa
-Host test.remoteassistant.me
-	IdentityFile ~/.ssh/id_rsa
-
-Host dev1area
-	Hostname dev.remoteassistant.me
-	User ubuntu
-	IdentityFile ~/.ssh/id_rsa
-Host dev.remoteassistant.me
-	IdentityFile ~/.ssh/id_rsa
-
-Host pro1area
-	Hostname pro.remoteassistant.me
-	User ubuntu
-	IdentityFile ~/.ssh/id_rsa
-Host pro.remoteassistant.me
-	IdentityFile ~/.ssh/id_rsa
-
 Host sedrick
 	Hostname sedrick.cz
 	User root
