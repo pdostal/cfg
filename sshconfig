@@ -49,6 +49,7 @@ Host shark
 Host Oshark
 	Hostname 192.168.192.1
 	User quick
+
 Host lsd
 	Hostname lsd.pdostal.cz
 	User freebsd
@@ -60,6 +61,10 @@ Host monka
 	Hostname monka.hysteria.cz
 	User quick
 	IdentityFile ~/.ssh/id_rsa
+
+Host shell.sh
+	Hostname shell.sh.cvut.cz
+	User pdostal
 
 Host test1area
 	Hostname test.remoteassistant.me
