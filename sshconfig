@@ -57,6 +57,13 @@ Host Olsd
 	Hostname 192.168.192.5
 	User freebsd
 
+Host sorrel
+	Hostname sorrel.pdostal.cz
+	User pavel
+Host Osorrel
+	Hostname 192.168.192.7
+	User pavel
+
 Host monka
 	Hostname monka.hysteria.cz
 	User quick
