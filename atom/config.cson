@@ -12,5 +12,9 @@
   editor:
     fontSize: 14
     invisibles: {}
-  core: {}
+  core:
+    themes: [
+      "atom-light-ui"
+      "atom-light-syntax"
+    ]
   latex: {}
