@@ -73,6 +73,10 @@ Host shell.sh
 	Hostname shell.sh.cvut.cz
 	User pdostal
 
+Host asuei01.upceucebny.cz
+	Hostname asuei01.upceucebny.cz
+	User st47169
+
 Host sedrick
 	Hostname sedrick.cz
 	User root
