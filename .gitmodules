@@ -43,3 +43,6 @@
 [submodule "atom/packages/compile-coffee"]
 	path = atom/packages/compile-coffee
 	url = git@github.com:pdostal/atom-compile-coffee.git
+[submodule "atom/packages/tabs-to-spaces"]
+	path = atom/packages/tabs-to-spaces
+	url = git@github.com:lee-dohm/tabs-to-spaces.git
