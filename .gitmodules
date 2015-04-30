@@ -34,9 +34,6 @@
 [submodule "atom/packages/atom-script"]
 	path = atom/packages/script
 	url = git@github.com:rgbkrk/atom-script.git
-[submodule "atom/packages/atom-textstats"]
-	path = atom/packages/textstats
-	url = git@github.com:cjoh/atom-textstats.git
 [submodule "atom/packages/atom-codeship-status"]
 	path = atom/packages/codeship-status
 	url = git@github.com:codeship/atom-codeship-status.git

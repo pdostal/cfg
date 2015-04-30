@@ -12,9 +12,12 @@
   editor:
     fontSize: 14
     invisibles: {}
+    showIndentGuide: true
   core:
     themes: [
-      "atom-light-ui"
-      "atom-light-syntax"
+      "atom-dark-ui"
+      "atom-dark-syntax"
     ]
   latex: {}
+  "tabs-to-spaces":
+    onSave: "untabify"
