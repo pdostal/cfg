@@ -50,10 +50,10 @@ Host Oshark
 	Hostname 192.168.192.1
 	User quick
 
-Host lsd
-	Hostname lsd.pdostal.cz
+Host rhubarb
+	Hostname rhubarb.pdostal.cz
 	User freebsd
-Host Olsd
+Host Orhubarb
 	Hostname 192.168.192.5
 	User freebsd
 
