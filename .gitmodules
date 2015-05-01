@@ -43,3 +43,6 @@
 [submodule "atom/packages/tabs-to-spaces"]
 	path = atom/packages/tabs-to-spaces
 	url = git@github.com:lee-dohm/tabs-to-spaces.git
+[submodule "atom/packages/git-log"]
+	path = atom/packages/git-log
+	url = git@github.com:NikhilKalige/git-log.git
