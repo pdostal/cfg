@@ -22,9 +22,6 @@
 [submodule "atom/packages/merge-conflicts"]
 	path = atom/packages/merge-conflicts
 	url = git@github.com:smashwilson/merge-conflicts.git
-[submodule "atom/packages/atom-placeholder-text"]
-	path = atom/packages/placeholder-text
-	url = git@github.com:Nonameghost/atom-placeholder-text.git
 [submodule "atom/packages/atom-project-manager"]
 	path = atom/packages/project-manager
 	url = git@github.com:danielbrodin/atom-project-manager.git
