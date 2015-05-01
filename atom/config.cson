@@ -21,3 +21,5 @@
   latex: {}
   "tabs-to-spaces":
     onSave: "untabify"
+  "git-diff":
+    showIconsInEditorGutter: true
