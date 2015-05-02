@@ -50,6 +50,13 @@ Host Oshark
 	Hostname 192.168.192.1
 	User quick
 
+Host cucumber
+        Hostname cucumber.pdostal.cz
+        User pavel
+Host Ocucumber
+        Hostname 192.168.192.5
+        User pavel
+
 Host rhubarb
 	Hostname rhubarb.pdostal.cz
 	User freebsd
