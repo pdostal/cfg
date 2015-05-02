@@ -12,7 +12,6 @@
   editor:
     fontSize: 14
     invisibles: {}
-    showIndentGuide: true
   core:
     themes: [
       "atom-dark-ui"
