@@ -1,6 +1,4 @@
 # Dotfiles
 
-My dotfiles
+My dotfiles & prompt scripts & etc.
 
-## TODO
-[ ] Install Atom packages automaticly
