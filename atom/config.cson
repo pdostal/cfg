@@ -17,6 +17,9 @@
       "atom-dark-ui"
       "atom-dark-syntax"
     ]
+    disabledPackages: [
+      "deprecation-cop"
+    ]
   latex: {}
   "tabs-to-spaces":
     onSave: "untabify"
