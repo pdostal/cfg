@@ -43,3 +43,6 @@
 [submodule "atom/packages/git-log"]
 	path = atom/packages/git-log
 	url = git@github.com:NikhilKalige/git-log.git
+[submodule "atom/packages/waketime"]
+	path = atom/packages/waketime
+	url = git@github.com:wakatime/atom-wakatime.git
