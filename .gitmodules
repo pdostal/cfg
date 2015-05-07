@@ -46,3 +46,6 @@
 [submodule "atom/packages/waketime"]
 	path = atom/packages/waketime
 	url = git@github.com:wakatime/atom-wakatime.git
+[submodule "atom/packages/wakatime"]
+	path = atom/packages/wakatime
+	url = git@github.com:wakatime/atom-wakatime.git
