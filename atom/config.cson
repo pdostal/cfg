@@ -25,3 +25,13 @@
     onSave: "untabify"
   "git-diff":
     showIconsInEditorGutter: true
+  wakatime:
+    ignore: [
+      "^/var/"
+      "^/tmp/"
+      "^/private/"
+      "COMMIT_EDITMSG$"
+      "PULLREQ_EDITMSG$"
+      "MERGE_MSG$"
+    ]
+    apikey: "56350d06-c9f1-4d20-ac84-968d56cd9bae"
