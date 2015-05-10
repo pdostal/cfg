@@ -1,3 +1,5 @@
+export PS1="\u@\h:\w$ "
+
 export EDITOR="vim"
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
