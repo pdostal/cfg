@@ -29,10 +29,10 @@ Host Oturris
 	Hostname 192.168.192.6
 	User root
 
-Host pi
-	Hostname 10.0.0.3
+Host raspi
+	Hostname 172.31.31.4
 	User pi
-Host Opi
+Host Oraspi
 	Hostname 192.168.192.4
 	User pi
 
