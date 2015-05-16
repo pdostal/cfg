@@ -8,7 +8,7 @@ export LC_NUMERIC=”en_US.UTF-8″
 export LC_MONETARY=”en_US.UTF-8″
 export LC_MESSAGES=”en_US.UTF-8″
 
-export PS1="\u@\h:\w$ "
+export PS1="\[\e]0;`basename $PWD`\007\]\u@\h:\w$ "
 
 export EDITOR="vim"
 export CLICOLOR=1
