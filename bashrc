@@ -67,3 +67,7 @@ omg_last_symbol=''
 omg_default_color_on='\e[0m'
 omg_default_color_off='\e[0m'
 omg_last_symbol_color='\e[0m'
+
+function omg_prompt_callback() {
+    echo "\[\e]0;`basename $PWD`\007\]"
+}
