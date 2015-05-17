@@ -1,4 +1,8 @@
 # Dotfiles
+As **_simple_** as **possible**
 
-My dotfiles & prompt scripts & etc.
-
+```
+$ git clone git@github.com:pdostal/dotfiles.git
+$ cd dotfiles
+$ ./apply.sh
+```
