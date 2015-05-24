@@ -13,111 +13,92 @@ LogLevel INFO
 # QUIET, FATAL, ERROR, INFO, VERBOSE
 # DEBUG, DEBUG1, DEBUG2 and DEBUG3
 
-Host carambola
-	Hostname 212.4.143.171
-	User root
-	IdentityFile ~/.ssh/id_dsa
-Host Ocarambola
-	Hostname 192.168.192.2
-	User root
-	IdentityFile ~/.ssh/id_dsa
+Host home
+  Hostname home.pdostal.cz
+  User root
+  IdentityFile ~/.ssh/id_rsa
+Host Ohome
+  Hostname 172.127.127.5
+  User root
+  IdentityFile ~/.ssh/id_rsa
 
-Host turris
-        Hostname 172.31.31.1
-        User root
-Host Oturris
-	Hostname 192.168.192.6
-	User root
+Host gr
+  Hostname gr.pdostal.cz
+  User root
+Host Ogr
+  Hostname 172.127.127.4
+  User root
 
 Host raspi
-	Hostname 172.31.31.4
-	User pi
-Host Oraspi
-	Hostname 192.168.192.4
-	User pi
+  Hostname 172.31.31.4
+  User pi
 
 Host vps
-	Hostname vps.pdostal.cz
-	User pavel
-Host Ovps
-	Hostname 192.168.192.3
-	User pavel
+  Hostname vps.pdostal.cz
+  User pavel
 
 Host shark
-	Hostname shark.pdostal.cz
-	User quick
-Host Oshark
-	Hostname 192.168.192.1
-	User quick
+  Hostname shark.pdostal.cz
+  User quick
 
 Host cucumber
-        Hostname cucumber.pdostal.cz
-        User pavel
+  Hostname cucumber.pdostal.cz
+  User pavel
 Host Ocucumber
-        Hostname 192.168.192.5
-        User pavel
+  Hostname 172.127.127.3
+  User pavel
 
 Host rhubarb
-	Hostname rhubarb.pdostal.cz
-	User freebsd
+  Hostname rhubarb.pdostal.cz
+  User freebsd
 Host Orhubarb
-	Hostname 192.168.192.5
-	User freebsd
+  Hostname 172.127.127.2
+  User freebsd
 
 Host sorrel
-	Hostname sorrel.pdostal.cz
-	User pavel
+  Hostname sorrel.pdostal.cz
+  User pavel
 Host Osorrel
-	Hostname 192.168.192.7
-	User pavel
+  Hostname 172.127.127.1
+  User pavel
 
 Host monka
-	Hostname monka.hysteria.cz
-	User quick
-	IdentityFile ~/.ssh/id_rsa
+  Hostname monka.hysteria.cz
+  User quick
+  IdentityFile ~/.ssh/id_rsa
 
 Host shell.sh
-	Hostname shell.sh.cvut.cz
-	User pdostal
+  Hostname shell.sh.cvut.cz
+  User pdostal
 
 Host asuei01.upceucebny.cz
-	Hostname asuei01.upceucebny.cz
-	User st47169
+  Hostname asuei01.upceucebny.cz
+  User st47169
 
 Host sedrick
-	Hostname sedrick.cz
-	User root
-	IdentityFile ~/.ssh/id_rsa
+  Hostname sedrick.cz
+  User root
+  IdentityFile ~/.ssh/id_rsa
 
 Host warhorse
-	Hostname kingdomcomerpg.com
-	User warhorse
-	IdentityFile ~/.ssh/id_rsa
+  Hostname kingdomcomerpg.com
+  User warhorse
+  IdentityFile ~/.ssh/id_rsa
 
 Host w-web
-	Hostname 77.93.223.122
-	User david
-
-Host pi.heroesofmemory
-	Hostname home.heroesofmemory.eu
-	User pi
-	Port 23
-
-Host heroesofmemory
-	Hostname home.heroesofmemory.eu
-	User root
-	IdentityFile ~/.ssh/id_dsa
+  Hostname 77.93.223.122
+  User david
 
 Host github.com
-	Hostname github.com
-	User git
+  Hostname github.com
+  User git
 
 Host bitbucket.org
-	Hostname bitbucket.org
-	User git
-	IdentityFile ~/.ssh/id_rsa
+  Hostname bitbucket.org
+  User git
+  IdentityFile ~/.ssh/id_rsa
 
 Host local
-	Hostname ::1
-	User pavel
-	IdentityFile ~/.ssh/id_rsa
+  Hostname ::1
+  User pavel
+  IdentityFile ~/.ssh/id_rsa
