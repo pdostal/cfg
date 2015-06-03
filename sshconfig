@@ -50,10 +50,10 @@ Host Ocucumber
 
 Host rhubarb
   Hostname rhubarb.pdostal.cz
-  User freebsd
+  User pavel
 Host Orhubarb
   Hostname 172.127.127.2
-  User freebsd
+  User pavel
 
 Host sorrel
   Hostname sorrel.pdostal.cz
