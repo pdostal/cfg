@@ -70,6 +70,9 @@ Host monka
 Host shell.sh
   Hostname shell.sh.cvut.cz
   User pdostal
+Host dvb.sh
+  Hostname dvb-t.sh.cvut.cz
+  User pavel
 
 Host asuei01.upceucebny.cz
   Hostname asuei01.upceucebny.cz
