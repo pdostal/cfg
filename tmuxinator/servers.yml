@@ -1,0 +1,8 @@
+name: servers
+root: ~/
+
+windows:
+  - sorrel: remosh sorrel
+  - rhubarb: remosh rhubarb
+  - cucumber: remosh cucumber
+
