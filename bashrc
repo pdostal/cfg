@@ -27,6 +27,7 @@ alias rs='rsync -av --delete'
 alias cs='coffee -o . -c .'
 alias lastsudo='sudo $(history -p \!\!)'
 alias airport='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport'
+alias dotfilesapply='~/dotfiles/apply.sh /Users/pavel /Users/pavel/dotfiles'
 
 if hash rbenv 2>/dev/null ; then
   eval "$(rbenv init -)"

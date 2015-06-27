@@ -1,11 +1,11 @@
 #!/bin/sh
 
 makelink() {
-	echo "@ $3\t$1";
-	rm -rf $1;
-	ln -s $2 $1;
-	chown -Rf $USER $1;
-	chmod -Rf $3 $1;
+  echo "@ $3\t$1";
+  rm -rf $1;
+  ln -s $2 $1;
+  chown -Rf $USER $1;
+  chmod -Rf $3 $1;
 }
 mergeone() {
         echo "+ $3\t$1";
@@ -20,18 +20,17 @@ mergetwo() {
 }
 
 # bash
-makelink $HOME/.bashrc $PWD/bashrc 770
+makelink $1/.bashrc $2/bashrc 770
 # vim
-makelink $HOME/.vimrc $PWD/vimrc 750
+makelink $1/.vimrc $2/vimrc 750
 # git
-makelink $HOME/.gitconfig $PWD/gitconfig 750
+makelink $1/.gitconfig $2/gitconfig 750
 # htop
-makelink $HOME/.htoprc $PWD/htoprc 750
+makelink $1/.htoprc $2/htoprc 750
 # ssh
-mergeone $HOME/.ssh/config $PWD/sshconfig 700
-mergetwo $HOME/.ssh/config $HOME/.ssh/aliases
+mergeone $1/.ssh/config $2/sshconfig 700
+mergetwo $1/.ssh/config $1/.ssh/aliases
 # gem
-makelink $HOME/.gemrc $PWD/gemrc 755
+makelink $1/.gemrc $2/gemrc 755
 # tmux
-makelink $HOME/.tmux.conf $PWD/tmux.conf 744
-
+makelink $1/.tmux.conf $2/tmux.conf 744
