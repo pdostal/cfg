@@ -1,31 +1,30 @@
 [user]
-	name = pdostal
-	email = git@pdostal.cz
-	signingkey = 70974BA9
+  name = pdostal
+  email = git@pdostal.cz
+  signingkey = 70974BA9
 [alias]
-	lg = log --graph --summary --stat --format='%Cblue%h %Cred%G? %Cblue%D%n%Cgreen%cN <%cE> %GK%n%cd, %cr:%n%n%B'
-	ll = log --format='%Cblue%h %Cgreen%cr %<(22)%Creset%cN %s'
-	c = !git add -A && git commit -S -a
-	cm = !git add -A && git commit -S -am
-	ca = !git add -A && git commit --amend
-	pu = push
-	pl = pull
-	fe = fetch
-	ch = checkout
-	st = !git add -A && git status -sbuall
-	br = branch
-	brdel = !sh -c 'git branch -D $1 && git push origin --delete $1' -
-	sh = stash
-	re = !git add -A && git reset --hard HEAD
-	ret = reset --soft HEAD^
-	rea = remote add
-	rer = remote rm
-	cl = clone
+  lg = log --graph --summary --stat --format='%Cblue%h %Cred%G? %Cblue%D%n%Cgreen%cN <%cE> %GK%n%cd, %cr:%n%n%B'
+  ll = log --format='%Cblue%h %Cgreen%cr %<(22)%Creset%cN %s'
+  c = commit -S -a
+  cm = commit -S -am
+  ca = commit --amend
+  pu = push
+  pl = pull
+  fe = fetch
+  ch = checkout
+  st = status -sbuall
+  br = branch
+  brdel = !sh -c 'git branch -D $1 && git push origin --delete $1' -
+  sh = stash
+  re = reset --hard HEAD
+  ret = reset --soft HEAD^
+  rea = remote add
+  rer = remote rm
+  cl = clone
 [color]
-	ui = auto
+  ui = auto
 [core]
-	excludesfile = ~/dotfiles/gitignore
-	excludesfile = ~/external/github_gitignore/Global/OSX.gitignore
+  excludesfile = ~/dotfiles/gitignore
+  excludesfile = ~/external/github_gitignore/Global/OSX.gitignore
 [push]
-	default = matching
-
+  default = matching
