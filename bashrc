@@ -20,6 +20,7 @@ unset MAILCHECK
 export PATH=./bin:~/bin/:/usr/local/sbin:$PATH
 
 alias g='git'
+alias ga='git add -A'
 alias ls='ls -F'
 alias la='ls -laF'
 alias rmr='rm -rf'
