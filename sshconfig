@@ -7,7 +7,7 @@ ControlPersist 180
 #PreferredAuthentications publickey
 VisualHostKey no
 ServerAliveInterval 10
-ForwardAgent yes
+ForwardAgent no
 IdentityFile ~/.ssh/id_ecdsa
 LogLevel INFO
 
