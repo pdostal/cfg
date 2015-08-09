@@ -34,3 +34,6 @@ mergetwo $1/.ssh/config $1/.ssh/aliases
 makelink $1/.gemrc $2/gemrc 755
 # tmux
 makelink $1/.tmux.conf $2/tmux.conf 744
+# tmuxinator
+makelink $1/.tmuxinator/servers.yml $2/tmuxinator/servers.yml 744
+
