@@ -17,7 +17,7 @@ export GREP_OPTIONS='--color=auto'
 
 unset MAILCHECK
 
-export PATH=./bin:~/bin/:/usr/local/sbin:$PATH
+export PATH=./bin:~/bin:/usr/local/sbin:$PATH
 
 alias g='git'
 alias ga='git add -A'
