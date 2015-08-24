@@ -21,8 +21,8 @@ export PATH=./bin:~/bin:/usr/local/sbin:$PATH
 
 alias g='git'
 alias ga='git add -A'
-alias ls='ls -F'
-alias la='ls -laF'
+alias ls='gls -F --color=never'
+alias la='gls -laF --color=never'
 alias rmr='rm -rf'
 alias rs='rsync -av --delete'
 alias cs='coffee -o . -c .'
