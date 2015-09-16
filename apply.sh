@@ -30,7 +30,7 @@ makelink $1/.gitconfig $2/gitconfig 750
 makelink $1/.htoprc $2/htoprc 750
 # ssh
 mergeone $1/.ssh/config $2/sshconfig 700
-mergetwo $1/.ssh/config $2/sshconfig_aliases
+mergetwo $1/.ssh/config $2/sshconfig_secret
 # gem
 makelink $1/.gemrc $2/gemrc 755
 # tmux
