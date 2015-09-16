@@ -20,7 +20,8 @@ mergetwo() {
 }
 
 # bash
-makelink $1/.bashrc $2/bashrc 770
+mergeone $1/.bashrc $2/bashrc 770
+mergetwo $1/.bashrc $2/bashrc_secret
 # vim
 makelink $1/.vimrc $2/vimrc 750
 # git
@@ -29,7 +30,7 @@ makelink $1/.gitconfig $2/gitconfig 750
 makelink $1/.htoprc $2/htoprc 750
 # ssh
 mergeone $1/.ssh/config $2/sshconfig 700
-mergetwo $1/.ssh/config $1/.ssh/aliases
+mergetwo $1/.ssh/config $2/sshconfig_aliases
 # gem
 makelink $1/.gemrc $2/gemrc 755
 # tmux

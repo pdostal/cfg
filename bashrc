@@ -19,6 +19,7 @@ unset MAILCHECK
 
 export PATH=./bin:~/bin:/usr/local/sbin:$PATH
 
+alias echo='gecho'
 alias g='git'
 alias ga='git add -A'
 alias ls='gls -F --color=never'
@@ -71,5 +72,5 @@ omg_default_color_off='\e[0m'
 omg_last_symbol_color='\e[0m'
 
 function omg_prompt_callback() {
-    echo "\[\e]0;`basename $PWD`\007\]"
+  echo "\[\e]0;`basename $PWD`\007\]"
 }
