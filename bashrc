@@ -13,7 +13,6 @@ export PS1="\[\e]0;`basename $PWD`\007\]\u@\h:\w$ "
 export EDITOR="vim"
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
-export GREP_OPTIONS='--color=auto'
 
 unset MAILCHECK
 
