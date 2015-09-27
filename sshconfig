@@ -8,6 +8,6 @@ ControlPersist 180
 VisualHostKey no
 ServerAliveInterval 10
 ForwardAgent no
-IdentityFile ~/.ssh/id_ecdsa
+IdentityFile ~/.ssh/id_rsa
 LogLevel INFO
 
