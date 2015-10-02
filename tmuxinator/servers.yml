@@ -5,4 +5,5 @@ windows:
   - sorrel: remosh sorrel
   - rhubarb: remosh rhubarb
   - cucumber: remosh cucumber
+  - shell.sh: remosh shell.sh
 
