@@ -2,8 +2,8 @@ name: servers
 root: ~/
 
 windows:
-  - sorrel: remosh sorrel
-  - rhubarb: remosh rhubarb
-  - cucumber: remosh cucumber
+  - sorrel: remosh sorrel_vpn
+  - rhubarb: remosh rhubarb_vpn
+  - cucumber: remosh cucumber_vpn
   - shell.sh: remosh shell.sh
 
