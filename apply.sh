@@ -2,6 +2,9 @@
 
 makelink() {
   echo "@ $3\t$1";
+  if [ ! -f $1 ]; then
+    mkdir -p `dirname $1`;
+  fi
   rm -rf $1;
   ln -s $2 $1;
   chown -Rf $USER $1;
@@ -9,6 +12,9 @@ makelink() {
 }
 mergeone() {
   echo "+ $3\t$1";
+  if [ ! -f $1 ]; then
+    mkdir -p `dirname $1`;
+  fi
   rm -rf $1;
   cp $2 $1;
   chown -Rf $USER $1;
