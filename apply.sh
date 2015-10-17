@@ -8,15 +8,17 @@ makelink() {
   chmod -Rf $3 $1;
 }
 mergeone() {
-        echo "+ $3\t$1";
-        rm -rf $1;
-        cp $2 $1;
-        chown -Rf $USER $1;
-        chmod -Rf $3 $1;
+  echo "+ $3\t$1";
+  rm -rf $1;
+  cp $2 $1;
+  chown -Rf $USER $1;
+  chmod -Rf $3 $1;
 }
 mergetwo() {
-        echo "+ ___\t$2";
-        cat $2 1>> $1;
+  echo "+ ___\t$2";
+  if [ -f $2 ]; then
+    cat $2 1>> $1;
+  fi
 }
 
 # bash
