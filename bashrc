@@ -64,7 +64,7 @@ omg_rebase_tracking_branch_symbol=''
 omg_merge_tracking_branch_symbol=''
 omg_should_push_symbol=''
 omg_has_stashes_symbol=''
-omg_last_symbol=''
+omg_last_symbol=''
 
 omg_default_color_on='\e[0m'
 omg_default_color_off='\e[0m'
