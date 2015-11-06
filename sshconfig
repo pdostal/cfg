@@ -3,11 +3,10 @@ Compression yes
 ControlMaster auto
 VerifyHostKeyDNS yes
 ControlPath /tmp/ssh_%r@%h:%p
-ControlPersist 180
-#PreferredAuthentications publickey
-VisualHostKey no
+ControlPersist 86400
+PreferredAuthentications publickey
+VisualHostKey yes
 ServerAliveInterval 10
 ForwardAgent no
-IdentityFile ~/.ssh/id_rsa
 LogLevel INFO
 
