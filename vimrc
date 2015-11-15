@@ -1,7 +1,5 @@
-set number
-
 syntax on
-
+set number
 set nowrap
 
 """ TABBING
