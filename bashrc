@@ -45,8 +45,8 @@ if hash fasd 2>/dev/null ; then
   unset fasd_cache
 fi
 
-omg_second_line='\w • '
-omg_ungit_prompt='\w • '
+omg_second_line='\w$ '
+omg_ungit_prompt='\w$ '
 omg_is_a_git_repo_symbol=''
 omg_has_untracked_files_symbol=''
 omg_has_adds_symbol=''
@@ -66,7 +66,7 @@ omg_rebase_tracking_branch_symbol=''
 omg_merge_tracking_branch_symbol=''
 omg_should_push_symbol=''
 omg_has_stashes_symbol=''
-omg_last_symbol=''
+omg_last_symbol='x'
 
 omg_default_color_on='\e[0m'
 omg_default_color_off='\e[0m'
