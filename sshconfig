@@ -4,7 +4,7 @@ ControlMaster auto
 VerifyHostKeyDNS yes
 ControlPath /tmp/ssh_%r@%h:%p
 ControlPersist 86400
-PreferredAuthentications publickey
+PreferredAuthentications gssapi-with-mic,hostbased,publickey,keyboard-interactive,password
 VisualHostKey yes
 ServerAliveInterval 10
 ForwardAgent no
