@@ -20,7 +20,6 @@ unset MAILCHECK
 
 export PATH=./bin:~/bin:/usr/local/sbin:$PATH
 
-alias echo='echo'
 alias g='git'
 alias ga='git add -A'
 alias ls='ls -F --color=never'
@@ -44,34 +43,3 @@ if hash fasd 2>/dev/null ; then
   source "$fasd_cache"
   unset fasd_cache
 fi
-
-omg_second_line='\w$ '
-omg_ungit_prompt='\w$ '
-omg_is_a_git_repo_symbol=''
-omg_has_untracked_files_symbol='!t'
-omg_has_adds_symbol='a'
-omg_has_deletions_symbol='d'
-omg_has_cached_deletions_symbol='d'
-omg_has_modifications_symbol='m'
-omg_has_cached_modifications_symbol='c'
-omg_ready_to_commit_symbol='c'
-omg_local_remote_separator=':'
-omg_is_on_a_tag_symbol='tag'
-omg_needs_to_merge_symbol='m'
-omg_detached_symbol='d'
-omg_can_fast_forward_symbol='f'
-omg_has_diverged_symbol='d'
-omg_not_tracked_branch_symbol='b'
-omg_rebase_tracking_branch_symbol='r'
-omg_merge_tracking_branch_symbol=':'
-omg_should_push_symbol=''
-omg_has_stashes_symbol='s'
-omg_last_symbol='x'
-
-omg_default_color_on='\e[0m'
-omg_default_color_off='\e[0m'
-omg_last_symbol_color='\e[0m'
-
-function omg_prompt_callback() {
-  echo "\[\e]0;`basename $PWD`\007\]"
-}
