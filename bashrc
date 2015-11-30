@@ -67,6 +67,11 @@ alias lastsudo='sudo $(history -p \!\!)'
 alias airport='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport'
 alias dotfilesapply='~/dotfiles/apply.sh /Users/pavel /Users/pavel/dotfiles'
 
+HISTSIZE=10000
+HISTFILESIZE=1000000
+shopt -s histappend
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
 if hash rbenv 2>/dev/null ; then
   eval "$(rbenv init -)"
 fi
