@@ -41,9 +41,9 @@ find_git_dirty() {
 PROMPT_COMMAND="find_git_branch; find_git_tag; find_git_dirty; $PROMPT_COMMAND"
 
 if [ "$myPrimaryDevice" == 1 ]; then
-  export PS1="\[\e]0;`basename $PWD`\007\]\u@macbook:\w\$git_branch\$git_tag\$git_dirty$ "
+  export PS1="\[\e]0;$USER@macbook:`basename $PWD`\007\]\u@macbook:\w\$git_branch\$git_tag\$git_dirty$ "
 else
-  export PS1="\[\e]0;`basename $PWD`\007\]\u@\h:\w\$git_branch\$git_tag\$git_dirty$ "
+  export PS1="\[\e]0;$USER@`hostname -s`:`basename $PWD`\007\]\u@\h:\w\$git_branch\$git_tag\$git_dirty$ "
 fi
 
 export TERM="xterm"
