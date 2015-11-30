@@ -8,7 +8,43 @@ export LC_NUMERIC=”en_US.UTF-8″
 export LC_MONETARY=”en_US.UTF-8″
 export LC_MESSAGES=”en_US.UTF-8″
 
-export PS1="\[\e]0;`basename $PWD`\007\]\u@\h:\w$ "
+# Based on: https://github.com/jimeh/git-aware-prompt
+find_git_branch() {
+  # Based on: http://stackoverflow.com/a/13003854/170413
+  local branch
+  if branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null); then
+    if [[ "$branch" == "HEAD" ]]; then
+      branch=' detached*'
+    fi
+    git_branch=" $branch"
+  else
+    git_branch=""
+  fi
+}
+find_git_tag() {
+  local tag
+  if tag=$(git describe --abbrev=0 --tags 2> /dev/null); then
+    git_tag=":$tag"
+  else
+    git_tag=""
+  fi
+}
+find_git_dirty() {
+  local status=$(git status --porcelain 2> /dev/null)
+  if [[ "$status" != "" ]]; then
+    git_dirty="'"
+  else
+    git_dirty=""
+  fi
+}
+
+PROMPT_COMMAND="find_git_branch; find_git_tag; find_git_dirty; $PROMPT_COMMAND"
+
+if [ "$myPrimaryDevice" == 1 ]; then
+  export PS1="\[\e]0;`basename $PWD`\007\]\u@macbook:\w\$git_branch\$git_tag\$git_dirty$ "
+else
+  export PS1="\[\e]0;`basename $PWD`\007\]\u@\h:\w\$git_branch\$git_tag\$git_dirty$ "
+fi
 
 export TERM="xterm"
 export EDITOR="vim"
