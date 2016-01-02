@@ -31,7 +31,8 @@ mergetwo() {
 mergeone $1/.bashrc $2/bashrc 770
 mergetwo $1/.bashrc $2/bashrc_secret
 # vim
-makelink $1/.vimrc $2/vimrc 750
+mergeone $1/.vimrc $2/vimrc 755
+mergetwo $1/.vimrc $2/vimrc_secret
 # git
 makelink $1/.gitconfig $2/gitconfig 750
 # htop
@@ -45,4 +46,3 @@ makelink $1/.gemrc $2/gemrc 755
 makelink $1/.tmux.conf $2/tmux.conf 744
 # tmuxinator
 makelink $1/.tmuxinator/servers.yml $2/tmuxinator/servers.yml 744
-
