@@ -23,22 +23,3 @@ endif
 filetype off
 set nocompatible
 
-""" VUNDLE
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-
-""" NERDTREE
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-map <C-n> :NERDTreeToggle<CR>
-
-""" VIM-COFFEE-SCRIPT
-set nocompatible
-Plugin 'kchmck/vim-coffee-script'
-filetype plugin indent on
-
-""" VUNDLE
-call vundle#end()
-filetype plugin indent on
-
