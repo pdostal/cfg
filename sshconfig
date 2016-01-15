@@ -9,4 +9,5 @@ VisualHostKey no
 ServerAliveInterval 10
 ForwardAgent no
 LogLevel INFO
+UseRoaming no
 
