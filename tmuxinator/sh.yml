@@ -1,0 +1,9 @@
+name: sh
+root: ~/
+
+attach: false
+post: tmux -CC attach
+
+windows:
+  - shell: bash
+

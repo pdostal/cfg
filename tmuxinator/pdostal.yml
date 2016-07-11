@@ -1,0 +1,12 @@
+name: pdostal
+root: ~/
+
+attach: false
+post: tmux -CC attach
+
+windows:
+- cucumber: remosh cucumber
+- sorrel: remosh sorrel
+- grape: remosh grape
+- peas: remosh peas
+
