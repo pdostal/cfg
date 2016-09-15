@@ -67,7 +67,7 @@ alias lastsudo='sudo $(history -p \!\!)'
 alias airport='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport'
 alias dotfilesapply='~/dotfiles/apply.sh /Users/pavel /Users/pavel/dotfiles'
 alias mosh='MOSH_TITLE_NOPREFIX=true mosh'
-
+alias mtr='sudo mtr'
 HISTSIZE=10000
 HISTFILESIZE=1000000
 shopt -s histappend
