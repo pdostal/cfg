@@ -25,6 +25,7 @@ copyone $1/.vimrc $2/vimrc 755
 copytwo $1/.vimrc $2/vimrc_secret
 # git
 copyone $1/.gitconfig $2/gitconfig 750
+copytwo $1/.gitconfig $2/gitconfig_secret
 # htop
 copyone $1/.htoprc $2/htoprc 750
 # ssh
