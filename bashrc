@@ -68,6 +68,7 @@ alias airport='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versi
 alias dotfilesapply='~/dotfiles/apply.sh /Users/pavel /Users/pavel/dotfiles'
 alias mosh='MOSH_TITLE_NOPREFIX=true mosh'
 alias mtr='sudo mtr'
+alias docu='docker-compose'
 HISTSIZE=10000
 HISTFILESIZE=1000000
 shopt -s histappend
