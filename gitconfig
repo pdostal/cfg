@@ -4,8 +4,8 @@
 [alias]
   lg = log --graph --summary --stat --format='%Cblue%h %Cred%G? %Cblue%D%n%Cgreen%cN <%cE> %GK%n%cd, %cr:%n%n%B'
   ll = log --format='%Cblue%h %Cgreen%cr %<(22)%Creset%cN %s'
-  c = commit -S -a
-  cm = commit -S -am
+  c = commit -a
+  cm = commit -am
   ca = commit --amend
   pu = push
   pl = pull
