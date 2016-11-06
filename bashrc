@@ -86,3 +86,4 @@ if hash fasd 2>/dev/null ; then
   source "$fasd_cache"
   unset fasd_cache
 fi
+
