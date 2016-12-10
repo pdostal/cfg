@@ -72,7 +72,7 @@ alias docu='docker-compose'
 HISTSIZE=10000
 HISTFILESIZE=1000000
 shopt -s histappend
-export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+#export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 if hash rbenv 2>/dev/null ; then
   eval "$(rbenv init -)"
