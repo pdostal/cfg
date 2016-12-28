@@ -58,8 +58,23 @@ export PATH=./bin:~/bin:/usr/local/sbin:$PATH
 
 alias g='git'
 alias ga='git add -A'
-alias ls='ls -F --color=never'
-alias la='ls -laF --color=never'
+
+down vote
+accepted
+As I mentioned above this seems to me to be the handiest method
+
+if ls --color -d . >/dev/null 2>&1; then
+  # GNU
+  alias ls='ls -F --color=never'
+  alias la='ls -laF --color=never'
+elif ls -G -d . >/dev/null 2>&1; then
+  # BSD
+  alias ls='ls -F'
+  alias la='ls -laF'
+else
+  alias ls='ls -F'
+  alias la='ls -laF'
+fi
 alias rmr='rm -rf'
 alias rs='rsync -av --delete'
 alias cs='coffee -o . -c .'
@@ -86,4 +101,3 @@ if hash fasd 2>/dev/null ; then
   source "$fasd_cache"
   unset fasd_cache
 fi
-
