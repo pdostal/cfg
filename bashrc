@@ -59,10 +59,6 @@ export PATH=./bin:~/bin:/usr/local/sbin:$PATH
 alias g='git'
 alias ga='git add -A'
 
-down vote
-accepted
-As I mentioned above this seems to me to be the handiest method
-
 if ls --color -d . >/dev/null 2>&1; then
   # GNU
   alias ls='ls -F --color=never'
