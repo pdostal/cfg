@@ -56,30 +56,6 @@ unset MAILCHECK
 
 export PATH=./bin:~/bin:/usr/local/sbin:$PATH
 
-alias g='git'
-alias ga='git add -A'
-
-if ls --color -d . >/dev/null 2>&1; then
-  # GNU
-  alias ls='ls -F --color=never'
-  alias la='ls -laF --color=never'
-elif ls -G -d . >/dev/null 2>&1; then
-  # BSD
-  alias ls='ls -F'
-  alias la='ls -laF'
-else
-  alias ls='ls -F'
-  alias la='ls -laF'
-fi
-alias rmr='rm -rf'
-alias rs='rsync -av --delete'
-alias cs='coffee -o . -c .'
-alias lastsudo='sudo $(history -p \!\!)'
-alias airport='sudo /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport'
-alias dotfilesapply='~/dotfiles/apply.sh /Users/pavel /Users/pavel/dotfiles'
-alias mosh='MOSH_TITLE_NOPREFIX=true mosh'
-alias mtr='sudo mtr'
-alias docu='docker-compose'
 HISTSIZE=10000
 HISTFILESIZE=1000000
 shopt -s histappend
@@ -97,3 +73,18 @@ if hash fasd 2>/dev/null ; then
   source "$fasd_cache"
   unset fasd_cache
 fi
+
+if ls --color -d . >/dev/null 2>&1; then
+  # GNU
+  alias ls='ls -F --color=never'
+  alias la='ls -laF --color=never'
+elif ls -G -d . >/dev/null 2>&1; then
+  # BSD
+  alias ls='ls -F'
+  alias la='ls -laF'
+else
+  alias ls='ls -F'
+  alias la='ls -laF'
+fi
+
+

@@ -1,12 +1,9 @@
-name: pdostal
+name: PDostal
 root: ~/
 
-attach: false
-post: tmux -CC attach
-
 windows:
-- cucumber: remosh cucumber
-- sorrel: remosh sorrel
+- habanero: remosh habanero
+- coconut: remosh coconut
 - grape: remosh grape
 - peas: remosh peas
 

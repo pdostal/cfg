@@ -1,9 +1,7 @@
-name: sh
+name: SiliconHill
 root: ~/
 
-attach: false
-post: tmux -CC attach
-
 windows:
-  - shell: bash
+- shell: remosh shell.sh
+- ftp: remosh ftp.sh
 

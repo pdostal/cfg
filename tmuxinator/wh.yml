@@ -1,0 +1,8 @@
+name: Warhorse
+root: ~/
+
+windows:
+- warhorse: remosh warhorse
+- whmon: remosh whmon
+- sedrick: remosh sedrick
+

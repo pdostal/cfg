@@ -19,7 +19,12 @@ copytwo() {
 
 # bash
 copyone $1/.bashrc $2/bashrc 770
-copytwo $1/.bashrc $2/bashrc_secret
+copytwo $1/.bashrc $2/sh_aliases
+copytwo $1/.bashrc $2/sh_secret
+# zsh
+copyone $1/.zshrc $2/zshrc 770
+copytwo $1/.zshrc $2/sh_aliases
+copytwo $1/.zshrc $2/sh_secret
 # vim
 copyone $1/.vimrc $2/vimrc 755
 copytwo $1/.vimrc $2/vimrc_secret
@@ -38,4 +43,4 @@ copyone $1/.tmux.conf $2/tmux.conf 744
 # tmuxinator
 copyone $1/.tmuxinator/pdostal.yml $2/tmuxinator/pdostal.yml 744
 copyone $1/.tmuxinator/sh.yml $2/tmuxinator/sh.yml 744
-
+copyone $1/.tmuxinator/wh.yml $2/tmuxinator/wh.yml 744
