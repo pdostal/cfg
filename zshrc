@@ -19,7 +19,7 @@ DISABLE_LS_COLORS="true"
 #DISABLE_UNTRACKED_FILES_DIRTY="true"
 #HIST_STAMPS="mm/dd/yyyy"
 #ZSH_CUSTOM=/path/to/new-custom-folder
-plugins=(git osx ssh-agent)
+plugins=(git git-extras sudo osx ssh-agent last-working-dir gem bundler bower npm brew node tmux)
 
 source $ZSH/oh-my-zsh.sh
 #export MANPATH="/usr/local/man:$MANPATH"
