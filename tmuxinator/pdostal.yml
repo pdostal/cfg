@@ -6,4 +6,6 @@ windows:
 - coconut: remosh coconut
 - grape: remosh grape
 - peas: remosh peas
+- dump: remosh dump
+- huis: remosh huis
 

@@ -6,8 +6,10 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export ZSH=/Users/pavel/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 
-#CASE_SENSITIVE="true"
-#HYPHEN_INSENSITIVE="true"
+setopt no_share_history
+
+CASE_SENSITIVE="true"
+HYPHEN_INSENSITIVE="false"
 
 #DISABLE_AUTO_UPDATE="true"
 #export UPDATE_ZSH_DAYS=13
@@ -19,12 +21,15 @@ DISABLE_LS_COLORS="true"
 #DISABLE_UNTRACKED_FILES_DIRTY="true"
 #HIST_STAMPS="mm/dd/yyyy"
 #ZSH_CUSTOM=/path/to/new-custom-folder
-plugins=(git git-extras sudo osx ssh-agent last-working-dir gem bundler bower npm brew node tmux)
+plugins=(git git-extras sudo osx ssh-agent gem bundler bower npm brew node tmux)
 
 source $ZSH/oh-my-zsh.sh
 #export MANPATH="/usr/local/man:$MANPATH"
 export LANG=en_US.UTF-8
+
 export EDITOR='vim'
+export TERM=xterm
+
 #if [[ -n $SSH_CONNECTION ]]; then
 #  export EDITOR='vim'
 #else
@@ -33,7 +38,10 @@ export EDITOR='vim'
 #export ARCHFLAGS="-arch x86_64"
 #export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-export PROMPT='%~$ '
+RPROMPT=""
+ZSH_THEME_GIT_PROMPT_DIRTY="%{%} %{%}*"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{%}"
+export PROMPT='%~$(parse_git_dirty)$(git_current_branch)$ '
 
 if ls --color -d . >/dev/null 2>&1; then
   # GNU

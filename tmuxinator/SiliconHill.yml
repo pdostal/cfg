@@ -4,4 +4,6 @@ root: ~/
 windows:
 - shell: remosh shell.sh
 - ftp: remosh ftp.sh
-
+- ftp-new: remosh ftp-new.sh
+- git: remosh git.sh
+- git-new: remosh git-new.sh

@@ -41,6 +41,7 @@ copyone $1/.gemrc $2/gemrc 755
 # tmux
 copyone $1/.tmux.conf $2/tmux.conf 744
 # tmuxinator
-copyone $1/.tmuxinator/pdostal.yml $2/tmuxinator/pdostal.yml 744
-copyone $1/.tmuxinator/sh.yml $2/tmuxinator/sh.yml 744
-copyone $1/.tmuxinator/wh.yml $2/tmuxinator/wh.yml 744
+copyone $1/.tmuxinator/PDostal.yml $2/tmuxinator/PDostal.yml 744
+copyone $1/.tmuxinator/SiliconHill.yml $2/tmuxinator/SiliconHill.yml 744
+copyone $1/.tmuxinator/Warhorse.yml $2/tmuxinator/Warhorse.yml 744
+copyone $1/.tmuxinator/Local.yml $2/tmuxinator/Local.yml 744
