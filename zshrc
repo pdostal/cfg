@@ -39,9 +39,13 @@ export TERM=xterm
 #export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 RPROMPT=""
-ZSH_THEME_GIT_PROMPT_DIRTY="%{%} %{%}*"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{%}%{%}*"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{%}"
-export PROMPT='%~$(parse_git_dirty)$(git_current_branch)$ '
+if git rev-parse --git-dir > /dev/null 2>&1; then
+  export PROMPT='%~ $(parse_git_dirty)$(git_current_branch)$ '
+else
+  export PROMPT='%~$(parse_git_dirty)$(git_current_branch)$ '
+fi
 
 if ls --color -d . >/dev/null 2>&1; then
   # GNU

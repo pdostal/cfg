@@ -40,6 +40,7 @@ copytwo $1/.ssh/config $2/sshconfig_secret
 copyone $1/.gemrc $2/gemrc 755
 # tmux
 copyone $1/.tmux.conf $2/tmux.conf 744
+copytwo $1/.tmux.conf $2/tmux_secret.conf
 # tmuxinator
 copyone $1/.tmuxinator/PDostal.yml $2/tmuxinator/PDostal.yml 744
 copyone $1/.tmuxinator/SiliconHill.yml $2/tmuxinator/SiliconHill.yml 744
