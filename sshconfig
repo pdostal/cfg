@@ -1,4 +1,5 @@
 KeepAlive yes
+ServerAliveInterval 60
 Compression yes
 ControlMaster auto
 VerifyHostKeyDNS yes
