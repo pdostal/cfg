@@ -39,6 +39,7 @@ export TERM=xterm
 #export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 RPROMPT=""
+setopt promptsubst
 ZSH_THEME_GIT_PROMPT_DIRTY="%{%}%{%}*"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{%}"
 if git rev-parse --git-dir > /dev/null 2>&1; then
