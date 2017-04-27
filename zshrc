@@ -38,15 +38,19 @@ export TERM=xterm
 #export ARCHFLAGS="-arch x86_64"
 #export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+function git_repo_space() {
+  if git rev-parse --git-dir > /dev/null 2>&1; then
+    echo " "
+  else
+    echo ""
+  fi
+}
+chpwd_functions+=(git_repo_space)
+
 RPROMPT=""
-setopt promptsubst
-ZSH_THEME_GIT_PROMPT_DIRTY="%{%}%{%}*"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{%}"
-if git rev-parse --git-dir > /dev/null 2>&1; then
-  export PROMPT='%~ $(parse_git_dirty)$(git_current_branch)$ '
-else
-  export PROMPT='%~$(parse_git_dirty)$(git_current_branch)$ '
-fi
+ZSH_THEME_GIT_PROMPT_DIRTY="%{%}%{%}%% "
+ZSH_THEME_GIT_PROMPT_CLEAN="%{%}$ "
+PROMPT='%~$(git_repo_space)$(git_current_branch)$(parse_git_dirty)'
 
 if ls --color -d . >/dev/null 2>&1; then
   # GNU
