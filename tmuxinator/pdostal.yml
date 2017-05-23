@@ -2,9 +2,7 @@ name: PDostal
 root: ~/
 
 windows:
-- habanero: remosh habanero
-- coconut: remosh coconut
-- grape: remosh grape
 - dump: remosh dump
 - huis: remosh huis
+- uzel: remosh uzel
 
