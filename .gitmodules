@@ -1,0 +1,3 @@
+[submodule "vim/plugin/vim-buftabline"]
+	path = vim/plugin/vim-buftabline
+	url = https://github.com/ap/vim-buftabline.git

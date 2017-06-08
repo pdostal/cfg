@@ -16,6 +16,16 @@ copytwo() {
     cat $2 1>> $1;
   fi
 }
+copydir() {
+  echo "# $3\t$1";
+  if [ ! -d $1/../ ]; then
+    mkdir -p `dirname $1/../`;
+  fi
+  rm -rf $1;
+  cp -R $2 $1;
+  chown -Rf $USER $1;
+  chmod -Rf $3 $1;
+}
 
 # bash
 copyone $1/.bashrc $2/bashrc 770
@@ -26,8 +36,7 @@ copyone $1/.zshrc $2/zshrc 770
 copytwo $1/.zshrc $2/sh_aliases
 copytwo $1/.zshrc $2/sh_secret
 # vim
-copyone $1/.vimrc $2/vimrc 755
-copytwo $1/.vimrc $2/vimrc_secret
+copydir $1/.vim $2/vim 775
 # git
 copyone $1/.gitconfig $2/gitconfig 750
 copytwo $1/.gitconfig $2/gitconfig_secret

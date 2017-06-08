@@ -20,6 +20,15 @@ if has("autocmd")
   "normal! g'\"" | endif
 endif
 
-filetype off
+filetype on
 set nocompatible
+
+set hidden
+nnoremap <C-E> :e.<CR>
+nnoremap <C-N> :bnext<CR>
+nnoremap <C-P> :bprev<CR>
+nnoremap <C-W> :bw<CR>
+
+syntax on
+colorscheme basic-light
 
