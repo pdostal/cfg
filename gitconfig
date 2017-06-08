@@ -21,7 +21,12 @@
   rer = remote rm
   cl = clone
 [color]
-  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true
+  pager = true
 [core]
   excludesfile = ~/dotfiles/gitignore
   excludesfile = ~/external/github_gitignore/Global/OSX.gitignore
