@@ -5,3 +5,6 @@ windows:
 - shell: remosh shell.sh
 - ftp: remosh ftp.sh
 - git: remosh git.sh
+- bosluk: remosh bosluk.sh
+- zaiko: remosh zaiko.sh
+

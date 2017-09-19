@@ -381,6 +381,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     " YAML
     call <SID>X("yamlBlockMappingKey", s:blue, "", "")
 
+    call <SID>X("BufTabLineFill", s:background, "", "")
+
     " Delete Functions
     delf <SID>X
     delf <SID>rgb
