@@ -41,8 +41,8 @@ set tabstop=2
 set shiftwidth=2
 
 """ LINE WIDTH
-set colorcolumn=0
-match ErrorMsg '\%>120v.\+'
+"set colorcolumn=0
+"match ErrorMsg '\%>120v.\+'
 
 """ AUTOSAVE
 :au FocusLost * silent! wa
