@@ -1,4 +1,4 @@
-name: PDostal
+name: Mine
 root: ~/
 
 windows:
@@ -6,4 +6,3 @@ windows:
 - huis: remosh huis
 - uzel: remosh uzel
 - hub:  remosh hub
-

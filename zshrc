@@ -25,6 +25,7 @@ DISABLE_LS_COLORS="true"
 #ZSH_CUSTOM=/path/to/new-custom-folder
 plugins=(git git-extras sudo osx ssh-agent tmux)
 
+zstyle :omz:plugins:ssh-agent identities id_rsa id_ecdsa id_dsa
 export EDITOR='vim'
 export TERM=xterm
 
@@ -54,4 +55,13 @@ PROMPT='%~$(git_repo_space)$(git_current_branch)$(parse_git_dirty)'
 #unsetopt share_history
 setopt noincappendhistory
 setopt nosharehistory
+
+fixagent() {
+  for key in SSH_AUTH_SOCK SSH_CONNECTION SSH_CLIENT; do
+    if (tmux show-environment | grep "^${key}" > /dev/null); then
+      value=`tmux show-environment | grep "^${key}" | sed -e "s/^[A-Z_]*=//"`
+      export ${key}="${value}"
+    fi
+  done
+}
 

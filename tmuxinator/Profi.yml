@@ -1,10 +1,10 @@
-name: Warhorse
+name: Profi
 root: ~/
 
 windows:
 - warhorse: remosh warhorse
 - whmon: remosh whmon
-- sedrick: remosh sedrick
-- jsindelar: remosh jsindelar
 - shvirt1: remosh shvirt1
 - shvirt2: remosh shvirt2
+- vps1.qiss: remosh vps1.qiss
+- vps2.qiss: remosh vps2.qiss
