@@ -6,5 +6,7 @@ windows:
 - whmon: remosh whmon
 - shvirt1: remosh shvirt1
 - shvirt2: remosh shvirt2
-- vps1.qiss: remosh vps1.qiss
-- vps2.qiss: remosh vps2.qiss
+- vps1.qiss: autossh -t -M 0 vps1.qiss
+- vps2.qiss: autossh -t -M 0 vps2.qiss tmux attach
+- master: autossh -t -M 0 admin@35.176.66.38
+- boliga-agent-ldn1.leadhub.cz: autossh -t -M 0 boliga-agent-ldn1.leadhub.cz tmux attach

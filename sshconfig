@@ -1,5 +1,4 @@
 KeepAlive yes
-ServerAliveInterval 60
 Compression yes
 ControlMaster auto
 VerifyHostKeyDNS yes
@@ -7,8 +6,10 @@ ControlPath /tmp/ssh_%r@%h:%p
 ControlPersist 86400
 PreferredAuthentications gssapi-with-mic,hostbased,publickey,keyboard-interactive,password
 VisualHostKey no
-ServerAliveInterval 10
+ServerAliveInterval 5
+ServerAliveCountMax 12
 ForwardAgent no
 LogLevel INFO
 UseRoaming no
+AddKeysToAgent yes
 
