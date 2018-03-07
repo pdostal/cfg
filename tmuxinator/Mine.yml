@@ -1,8 +1,0 @@
-name: Mine
-root: ~/
-
-windows:
-- dump: remosh dump
-- huis: remosh huis
-- uzel: remosh uzel
-- hub:  remosh hub
