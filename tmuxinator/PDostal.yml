@@ -4,7 +4,7 @@ root: ~/
 windows:
 - dump: remosh dump
 - huis: remosh huis
-- hub: autossh -t -M 0 hub tmux attach
+- mashina: autossh -t -M 0 mashina tmux attach
 - bir: autossh -t -M 0 bir tmux attach
 - iki: autossh -t -M 0 iki tmux attach
 
