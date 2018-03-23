@@ -2,8 +2,8 @@ name: PDostal
 root: ~/
 
 windows:
-- dump: remosh dump
-- huis: remosh huis
+- dump: autossh -t -M 0 dump tmux attach
+- huis: autossh -t -M 0 huis tmux attach
 - mashina: autossh -t -M 0 mashina tmux attach
 - bir: autossh -t -M 0 bir tmux attach
 - iki: autossh -t -M 0 iki tmux attach
