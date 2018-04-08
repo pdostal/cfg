@@ -5,7 +5,7 @@ VerifyHostKeyDNS yes
 ControlPath /tmp/ssh_%r@%h:%p
 ControlPersist 86400
 PreferredAuthentications gssapi-with-mic,hostbased,publickey,keyboard-interactive,password
-VisualHostKey no
+VisualHostKey yes
 ServerAliveInterval 5
 ServerAliveCountMax 12
 ForwardAgent no
