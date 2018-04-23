@@ -27,6 +27,7 @@
 [core]
   excludesfile = ~/dotfiles/gitignore
   excludesfile = ~/external/github_gitignore/Global/OSX.gitignore
+  excludefile = ~/.gitignore
 [push]
   default = matching
 [filter "lfs"]

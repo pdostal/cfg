@@ -41,7 +41,7 @@ find_git_dirty() {
 PROMPT_COMMAND="find_git_branch; find_git_tag; find_git_dirty; $PROMPT_COMMAND"
 
 if [ "$myPrimaryDevice" == 1 ]; then
-  export PS1="\[\e]0;local: \w\a\007\]\w\$git_branch\$git_tag\$git_dirty$ "
+  export PS1="\[\e]0;local: \w\a\007\]\h:\w\$git_branch\$git_tag\$git_dirty$ "
 else
   export PS1="\[\e]0;\h: \w\a\007\]\u@\h:\w\$git_branch\$git_tag\$git_dirty$ "
 fi
