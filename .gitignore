@@ -2,3 +2,5 @@
 tmuxinator/*_secret*
 
 vim/.netrwhist
+vim/pack/pdostal/start/vim-*
+
