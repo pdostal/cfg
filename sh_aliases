@@ -20,7 +20,7 @@ alias rs='rsync -av --delete'
 alias cs='coffee -o . -c .'
 
 alias lastsudo='sudo $(history -p \!\!)'
-alias dotfilesapply='~/dotfiles/apply.sh ~/ ~/dotfiles'
+alias dotfilesapply='~/dotfiles/apply.sh ~ ~/dotfiles'
 alias mosh='MOSH_TITLE_NOPREFIX=true mosh'
 
 alias mtr='sudo mtr'
