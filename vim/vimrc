@@ -6,6 +6,15 @@ Plug 'vim-scripts/vim-auto-save'
 
 call plug#end()
 
+set rtp+=~/.vundle/Vundle.vim
+call vundle#begin()
+call vundle#begin('~/.vundle')
+
+Plugin 'VundleVim/Vundle.vim'
+"Plugin 'Einenlum/yaml-revealer'
+
+call vundle#end()
+filetype plugin indent on
 
 set hidden
 set showcmd
@@ -13,7 +22,6 @@ set hlsearch
 set wildmenu
 set smartcase
 set ignorecase
-set nocompatible
 filetype indent plugin on
 set backspace=indent,eol,start
 set autoindent
@@ -82,7 +90,7 @@ endif
 
 let g:auto_save = 1
 
-filetype on
+filetype off
 set nocompatible
 
 set hidden
