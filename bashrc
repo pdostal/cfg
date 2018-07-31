@@ -46,7 +46,6 @@ else
   export PS1="\[\e]0;\h: \w\a\007\]\u@\h:\w\$git_branch\$git_tag\$git_dirty$ "
 fi
 
-export TERM="xterm"
 export EDITOR="vim"
 
 export CLICOLOR=1
@@ -87,4 +86,5 @@ else
   alias la='ls -laF'
 fi
 
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then   export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"; fi
 
