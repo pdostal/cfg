@@ -50,6 +50,8 @@ copyone $1/.gemrc $2/gemrc 755
 # tmux
 copyone $1/.tmux.conf $2/tmux.conf 744
 copytwo $1/.tmux.conf $2/tmux_secret.conf
+# ansible
+copyone $1/.ansible.cfg $2/ansible.cfg 744
 
 # tmuxinator
 for filename in $2/tmuxinator/*; do
