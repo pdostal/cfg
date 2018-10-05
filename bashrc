@@ -73,17 +73,22 @@ if hash fasd 2>/dev/null ; then
   unset fasd_cache
 fi
 
-if ls --color -d . >/dev/null 2>&1; then
-  # GNU
-  alias ls='ls -F --color=never'
-  alias la='ls -laF --color=never'
-elif ls -G -d . >/dev/null 2>&1; then
-  # BSD
-  alias ls='ls -F'
-  alias la='ls -laF'
-else
-  alias ls='ls -F'
-  alias la='ls -laF'
-fi
 
+SSH_ENV="$HOME/.ssh/environment"
+function start_agent {
+  touch "${SSH_ENV}"
+  chmod 600 "${SSH_ENV}"
+  ssh-agent >> "${SSH_ENV}"
+  . "${SSH_ENV}" > /dev/null
+  ssh-add
+}
+
+if [ -f "${SSH_ENV}" ]; then
+  . "${SSH_ENV}" > /dev/null
+  if ! ps -p $SSH_AGENT_PID > /dev/null; then
+    start_agent
+  fi
+else
+  start_agent
+fi
 
