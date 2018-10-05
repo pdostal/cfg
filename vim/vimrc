@@ -4,7 +4,6 @@ set hlsearch
 set wildmenu
 set smartcase
 set ignorecase
-set nocompatible
 filetype indent plugin on
 set backspace=indent,eol,start
 set autoindent
@@ -37,9 +36,6 @@ nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
 nnoremap <C-W> :bw<CR>
 nnoremap <C-X> :bdelete<CR>
-
-syntax on
-colorscheme basic-light
 
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_map = '<c-o>'

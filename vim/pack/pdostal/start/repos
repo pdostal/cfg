@@ -1,4 +1,4 @@
-url = https://github.com/vim-scripts/vim-auto-save
-url = https://github.com/ap/vim-buftabline
-url = https://github.com/kien/ctrlp.vim
+git clone https://github.com/vim-scripts/vim-auto-save
+git clone https://github.com/ap/vim-buftabline
+git clone https://github.com/kien/ctrlp.vim vim-ctrlp
 
