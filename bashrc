@@ -8,6 +8,8 @@ export LC_NUMERIC=”en_US.UTF-8″
 export LC_MONETARY=”en_US.UTF-8″
 export LC_MESSAGES=”en_US.UTF-8″
 
+export GPG_TTY=$(tty)
+
 # Based on: https://github.com/jimeh/git-aware-prompt
 find_git_branch() {
   # Based on: http://stackoverflow.com/a/13003854/170413
