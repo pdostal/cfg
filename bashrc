@@ -78,19 +78,24 @@ fi
 
 SSH_ENV="$HOME/.ssh/environment"
 function start_agent {
-  touch "${SSH_ENV}"
-  chmod 600 "${SSH_ENV}"
-  ssh-agent >> "${SSH_ENV}"
-  . "${SSH_ENV}" > /dev/null
+  echo '' > $SSH_ENV
+  chmod 600 $SSH_ENV
+  ssh-agent >> $SSH_ENV
+  source $SSH_ENV > /dev/null
+  echo "The SSH agent runs as ${SSH_AGENT_PID} ."
   ssh-add
 }
 
 if [ -f "${SSH_ENV}" ]; then
   . "${SSH_ENV}" > /dev/null
   if ! ps -p $SSH_AGENT_PID > /dev/null; then
+    echo "Process ${SSH_AGENT_PID} is dead."
     start_agent
+  else
+    echo "The SSH agent runs as ${SSH_AGENT_PID} ."
   fi
 else
+  echo "File ${SSH_ENV} does not exist yet."
   start_agent
 fi
 
