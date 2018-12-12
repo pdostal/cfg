@@ -45,3 +45,7 @@ if [ -x "$(command -v kubectl)" ]; then
   . <(kubectl completion bash)
 fi
 
+if [ -f /usr/local/share/bash-completion/bash_completion ]; then
+  . /usr/local/share/bash-completion/bash_completion
+fi
+
