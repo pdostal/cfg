@@ -55,7 +55,8 @@ export LSCOLORS=Exfxcxdxbxegedabagacad
 
 unset MAILCHECK
 
-export PATH=./bin:~/bin:/usr/local/sbin:$PATH
+export PATH=./bin:~/bin:~/.local/bin:~/external:/usr/local/sbin:$PATH
+export GOPATH=~/go
 
 HISTSIZE=10000
 HISTFILESIZE=1000000
@@ -86,16 +87,18 @@ function start_agent {
   ssh-add
 }
 
-if [ -f "${SSH_ENV}" ]; then
-  . "${SSH_ENV}" > /dev/null
-  if ! ps -p $SSH_AGENT_PID > /dev/null; then
-    echo "Process ${SSH_AGENT_PID} is dead."
-    start_agent
+if [[ $- =~ "i" ]]; then
+  if [ -f "${SSH_ENV}" ]; then
+    . "${SSH_ENV}" > /dev/null
+    if ! ps -p $SSH_AGENT_PID > /dev/null; then
+      echo "Process ${SSH_AGENT_PID} is dead."
+      start_agent
+    else
+      echo "The SSH agent runs as ${SSH_AGENT_PID} ."
+    fi
   else
-    echo "The SSH agent runs as ${SSH_AGENT_PID} ."
+    echo "File ${SSH_ENV} does not exist yet."
+    start_agent
   fi
-else
-  echo "File ${SSH_ENV} does not exist yet."
-  start_agent
 fi
 
