@@ -47,6 +47,9 @@ copyone $1/.ssh/config $2/sshconfig 700
 copytwo $1/.ssh/config $2/sshconfig_secret
 # gem
 copyone $1/.gemrc $2/gemrc 755
+# gpg
+copyone $1/.gnupg/gpg-agent.conf $2/gpg-agent.conf 755
+copyone $1/.gnupg/gpg.conf $2/gpg.conf 755
 # tmux
 copyone $1/.tmux.conf $2/tmux.conf 744
 copytwo $1/.tmux.conf $2/tmux_secret.conf
