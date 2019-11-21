@@ -103,6 +103,13 @@ else
   start_agent
 fi
 
+if [ -d "/usr/local/bin" ]; then
+  export PATH="/usr/local/bin:$PATH"
+fi
+if [ -d "~/bin" ]; then
+  export PATH="~/bin:$PATH"
+fi
+
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
