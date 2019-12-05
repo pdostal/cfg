@@ -13,4 +13,5 @@ ForwardAgent no
 LogLevel INFO
 UseRoaming no
 AddKeysToAgent yes
+SendEnv LANG LC_*
 
