@@ -10,6 +10,10 @@ export LC_MESSAGES=”en_US.UTF-8″
 
 export GPG_TTY=$(tty)
 
+if [ -z "$PS1" ]; then
+  return
+fi
+
 # Based on: https://github.com/jimeh/git-aware-prompt
 find_git_branch() {
   # Based on: http://stackoverflow.com/a/13003854/170413
@@ -78,19 +82,39 @@ fi
 
 SSH_ENV="$HOME/.ssh/environment"
 function start_agent {
-  touch "${SSH_ENV}"
-  chmod 600 "${SSH_ENV}"
-  ssh-agent >> "${SSH_ENV}"
-  . "${SSH_ENV}" > /dev/null
+  echo '' > $SSH_ENV
+  chmod 600 $SSH_ENV
+  ssh-agent >> $SSH_ENV
+  source $SSH_ENV > /dev/null
+  echo "The SSH agent runs as ${SSH_AGENT_PID} ."
   ssh-add
 }
 
 if [ -f "${SSH_ENV}" ]; then
   . "${SSH_ENV}" > /dev/null
   if ! ps -p $SSH_AGENT_PID > /dev/null; then
+    echo "Process ${SSH_AGENT_PID} is dead."
     start_agent
+  else
+    echo "The SSH agent runs as ${SSH_AGENT_PID} ."
   fi
 else
+  echo "File ${SSH_ENV} does not exist yet."
   start_agent
+fi
+
+if [ -d "/usr/local/bin" ]; then
+  export PATH="/usr/local/bin:$PATH"
+fi
+if [ -d "~/bin" ]; then
+  export PATH="~/bin:$PATH"
+fi
+
+if ! shopt -oq posix; then
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
 fi
 

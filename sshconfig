@@ -1,3 +1,4 @@
+User pdostal
 KeepAlive yes
 Compression yes
 ControlMaster auto
@@ -11,4 +12,5 @@ ServerAliveCountMax 12
 ForwardAgent no
 LogLevel INFO
 AddKeysToAgent yes
+SendEnv LANG LC_*
 
