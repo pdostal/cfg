@@ -11,7 +11,6 @@ ServerAliveInterval 5
 ServerAliveCountMax 12
 ForwardAgent no
 LogLevel INFO
-UseRoaming no
 AddKeysToAgent yes
 SendEnv LANG LC_*
 
